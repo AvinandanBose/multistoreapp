@@ -12,31 +12,27 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 3,
+      length: 9, // No. of tabs[] per tabBarView
       child: Scaffold(
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
           title: const CupertinoSearchTextField(),
-          bottom: TabBar(
+          bottom:  const TabBar(
+            isScrollable: true, //to have the Tab Bar stretched
+            indicatorWeight: 8,
+            indicatorColor: Colors.yellow,
             tabs: [
-              Tab(
-                child: Text('Men',
-                style: TextStyle(color: Colors.grey.shade600),
-                ) ,
+              RepeatedTab(label: 'Men',),
+              RepeatedTab(label: 'Women',),
+              RepeatedTab(label: 'Shoes',),
+              RepeatedTab(label: 'Bags',),
+              RepeatedTab(label: 'Electronics',),
+              RepeatedTab(label: 'Accessories',),
+              RepeatedTab(label: 'Home & Garden',),
+              RepeatedTab(label: 'Kids',),
+              RepeatedTab(label: 'Beauty',),
 
-              ),
-              Tab(
-                child: Text('Women',
-                  style: TextStyle(color: Colors.grey.shade600),
-                ) ,
-
-              ),
-              Tab(
-                child: Text('Shoes',
-                  style: TextStyle(color: Colors.grey.shade600),
-                ) ,
-              ),
 
             ],
           ),
@@ -53,9 +49,44 @@ class _HomeScreenState extends State<HomeScreen> {
             Center(
               child: Text('shoes screen'),
             ),
+            Center(
+              child: Text('bags screen'),
+            ),
+            Center(
+              child: Text('electronics screen'),
+            ),
+            Center(
+              child: Text('accessories screen'),
+            ),
+            Center(
+              child: Text('home & garden screen'),
+            ),
+            Center(
+              child: Text('Kids screen'),
+            ),
+            Center(
+              child: Text('Beauty screen'),
+            ),
           ],
         ),
       ),
+    );
+  }
+}
+
+class RepeatedTab extends StatelessWidget {
+  final String label;
+  const RepeatedTab({
+    Key? key, required this.label
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Tab(
+      child: Text(label,
+      style: TextStyle(color: Colors.grey.shade600),
+      ) ,
+
     );
   }
 }
