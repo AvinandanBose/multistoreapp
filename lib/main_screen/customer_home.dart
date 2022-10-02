@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:multistoreapp/main_screen/home.dart';
 
 class CustomerHomeScreen extends StatefulWidget {
   const CustomerHomeScreen({Key? key}) : super(key: key);
@@ -10,6 +11,7 @@ class CustomerHomeScreen extends StatefulWidget {
 class _CustomerHomeScreenState extends State<CustomerHomeScreen> {
   int selectedIndex = 0;
   final List<Widget> tabs = const [
+    HomeScreen(),
     Center(
       child: Text('home screen'),
     ),
