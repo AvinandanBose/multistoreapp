@@ -6,5 +6,6 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
 <li><h3> 2. <a href = "https://github.com/AvinandanBose/multistoreapp/tree/master2" >Second Update(Home Screen Design(1)[Before Refactoring])  </a> </h3></li>
 <li><h3> 3. <a href = "https://github.com/AvinandanBose/multistoreapp/tree/master3" >Third Update(Home Screen Design(2)[After Refactoring, And Implementing Indicator])  </a> </h3></li>
 <li><h3> 4. <a href = "https://github.com/AvinandanBose/multistoreapp/tree/master4" >Fourth Update(Search Bar)  </a> </h3></li>
+<li><h3> 5. Category Screen </a> </h3></li>
 </ul>
 
