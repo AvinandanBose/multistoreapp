@@ -8,7 +8,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
 <li><h3> 4. <a href = "https://github.com/AvinandanBose/multistoreapp/tree/master4" >Fourth Update(Search Bar)  </a> </h3></li>
 <li><h3> 5. Category Screen </a> </h3></li>
 <ul>
-<h3><li><a href = https://github.com/AvinandanBose/multistoreapp/tree/master3" >5.a) Refactor and Stack Widget with Positioned children </li></h3>
+<h3><li><a href = https://github.com/AvinandanBose/multistoreapp/tree/master3" >5.a) Refactor(Fake Search Widget(User Defined)) and Stack Widget(In-built from library) with Positioned children </li></h3>
 </ul>
 </ul>
 
