@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../minor_screens/search.dart';
+import '../widgets/fake_search.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -19,53 +20,7 @@ class _HomeScreenState extends State<HomeScreen> {
         appBar: AppBar(
           elevation: 0,
           backgroundColor: Colors.white,
-          title: InkWell(
-            onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>const SearchScreen()));
-            },
-            child: Container(
-              height: 35,
-              decoration: BoxDecoration(
-                border: Border.all(
-                  color: Colors.yellow,
-                  width: 1.4,
-                ),
-                borderRadius: BorderRadius.circular(25),
-              ),
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children:  <Widget>[
-                  const Icon(
-                    Icons.search,
-                    color: Colors.grey,
-                  ),
-                  const Text(
-                    'What are you looking for?',
-                    style: TextStyle(
-                      fontSize: 16,
-                      color: Colors.grey,
-                    ),
-                  ),
-                  Container(
-                    height: 32,
-                    width: 72,
-                    decoration:  BoxDecoration(
-                    color: Colors.yellow,
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                    child: const Center(
-                      child: Text('Search',
-                      style: TextStyle(
-                        fontSize: 16,
-                        color: Colors.grey,
-                      ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
+          title: const FakeSearch(),
           bottom: const TabBar(
             isScrollable: true, //to have the Tab Bar stretched
             indicatorWeight: 8,
@@ -136,6 +91,8 @@ class _HomeScreenState extends State<HomeScreen> {
     );
   }
 }
+
+
 
 class RepeatedTab extends StatelessWidget {
   final String label;
