@@ -11,6 +11,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master5">  Refactor(Fake Search Widget(User Defined)) and Stack Widget(In-built from library) with Positioned children. </a></li></h3>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master6">  Using MediaQuery and Adjusting Size Of Category Screen. </a></li></h3>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master7">  Creation of Two User Defined Widgets :1) Categview 2) SideNavigator. </a></li></h3>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master8">  Keeping MediaQuery To A Variable And Passing The Variable In Parameters Of Two User Defined Widgets :1) Categview 2) SideNavigator. </a></li></h3>
 </ul>
 </ul>
 
