@@ -17,6 +17,11 @@ class _CategoryScreenState extends State<CategoryScreen> {
       width: size.width*0.2,
       //It means the container's width is 20% of total width of the screen
       color: Colors.grey.shade300,
+      child: ListView.builder(
+          itemCount: 12,
+          itemBuilder: (context, index){
+            return const Text('Men');
+          })
     );
 
   }
