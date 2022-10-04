@@ -9,27 +9,36 @@ class CategoryScreen extends StatefulWidget {
 }
 
 class _CategoryScreenState extends State<CategoryScreen> {
-
-  Widget sideNavigator(Size size){
+  Widget sideNavigator(Size size) {
     return Container(
-      height: size.height*0.8,
+      height: size.height * 0.8,
       //It means the container's height is 80% of total height of the screen
-      width: size.width*0.2,
+      width: size.width * 0.2,
       //It means the container's width is 20% of total width of the screen
       color: Colors.grey.shade300,
+      child: ListView.builder(
+          itemCount: 12,
+          itemBuilder: (context, index) {
+            return SizedBox(
+              height: size.height / 11, //i.e. 100 px
+              child: const Center(
+                child: Text('Men'),
+              ),
+            );
+          }),
     );
-
   }
 
-  Widget categView(Size size){
+  Widget categView(Size size) {
     return Container(
-      height: size.height*0.8,
+      height: size.height * 0.8,
       //It means the container's height is 80% of total height of the screen
-      width: size.width*0.8,
+      width: size.width * 0.8,
       //It means the container's width is 80% of total width of the screen
       color: Colors.white,
     );
   }
+
   @override
   Widget build(BuildContext context) {
     var sizeNew = MediaQuery.of(context).size;
