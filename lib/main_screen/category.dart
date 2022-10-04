@@ -1,6 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:multistoreapp/widgets/fake_search.dart';
 
+//global variable
+List<ItemsData> items =[
+  ItemsData(label: 'men'),
+  ItemsData(label: 'women'),
+  ItemsData(label: 'shoes'),
+  ItemsData(label: 'bags'),
+  ItemsData(label: 'electronics'),
+  ItemsData(label: 'accessories'),
+  ItemsData(label: 'home & garden'),
+  ItemsData(label: 'kids'),
+  ItemsData(label: 'beauty'),
+];
+
 class CategoryScreen extends StatefulWidget {
   const CategoryScreen({Key? key}) : super(key: key);
 
@@ -10,26 +23,38 @@ class CategoryScreen extends StatefulWidget {
 
 class _CategoryScreenState extends State<CategoryScreen> {
 
-  Widget sideNavigator(Size size){
+
+
+  Widget sideNavigator(Size size) {
     return Container(
-      height: size.height*0.8,
+      height: size.height * 0.8,
       //It means the container's height is 80% of total height of the screen
-      width: size.width*0.2,
+      width: size.width * 0.2,
       //It means the container's width is 20% of total width of the screen
       color: Colors.grey.shade300,
+      child: ListView.builder(
+          itemCount: items.length,
+          itemBuilder: (context, index) {
+            return SizedBox(
+              height: size.height / 11, //i.e. 100 px
+              child:  Center(
+                child: Text(items[index].label),
+              ),
+            );
+          }),
     );
-
   }
 
-  Widget categView(Size size){
+  Widget categView(Size size) {
     return Container(
-      height: size.height*0.8,
+      height: size.height * 0.8,
       //It means the container's height is 80% of total height of the screen
-      width: size.width*0.8,
+      width: size.width * 0.8,
       //It means the container's width is 80% of total width of the screen
       color: Colors.white,
     );
   }
+
   @override
   Widget build(BuildContext context) {
     var sizeNew = MediaQuery.of(context).size;
@@ -58,4 +83,10 @@ class _CategoryScreenState extends State<CategoryScreen> {
       ),
     );
   }
+}
+class ItemsData {
+
+  String label;
+  bool isSelected;
+  ItemsData({required this.label,  this.isSelected =false});
 }
