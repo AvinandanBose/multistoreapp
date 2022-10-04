@@ -9,6 +9,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
 <li><h3> 5. Category Screen </a> </h3></li>
 <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master5">  Refactor(Fake Search Widget(User Defined)) and Stack Widget(In-built from library) with Positioned children. </a></li></h3>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master6">  Using MediaQuery and Adjusting Size Of Category Screen. </a></li></h3>
 </ul>
 </ul>
 
