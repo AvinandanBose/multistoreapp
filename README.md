@@ -34,6 +34,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
     <h3> <ins><i> Now coming back to Project </i></ins></h3>
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master15"> Applying PageView Widget in Category View widget </a></li>
      <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master16">Applying PageController to Jump between Pages in PageView  </a></li>
+     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master17">Applying Animation with Time Duration in PageController to Jump between Pages in PageView Widget  </a></li>
   </ul>
   
 </ul>
