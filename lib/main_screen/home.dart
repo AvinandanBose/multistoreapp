@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../minor_screens/search.dart';
 import '../widgets/fake_search.dart';
 
 class HomeScreen extends StatefulWidget {
