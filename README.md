@@ -37,6 +37,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
      <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master17">Applying Animation with Time Duration in PageController to Jump between Pages in PageView Widget  </a></li>
      <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master18">Applying initState() to select the First Item when the Category widget Loads.   </a></li>
   </ul>
+  <h3><li> 5 c) Grid View  of Category Screen </li> </h3>
   
 </ul>
 </ul>
