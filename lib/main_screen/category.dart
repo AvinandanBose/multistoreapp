@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:multistoreapp/categories/men_category.dart';
 import 'package:multistoreapp/widgets/fake_search.dart';
 
 //global variable
@@ -97,7 +98,8 @@ final PageController pgcontroller = PageController();
         },
         scrollDirection: Axis.vertical,
         children: const <Widget>[
-          Center(child: Text('men category'),),
+
+          MenCategory(),
           Center(child: Text('Women category'),),
           Center(child: Text('Shoes category'),),
           Center(child: Text('Bags category'),),
