@@ -27,6 +27,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
 <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master13"> In a big Sized Box taking a list of Containers through ListView.builder </a></li></h3>
 <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master14"> Activating color (White) when set to True for Each Container , While others remain false(Final) </a></li></h3>
 </ul>
+<h3><li> 5 b) Category View  of Category Screen </li> </h3>
 </ul>
 </ul>
 
