@@ -30,6 +30,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
 <h3><li> 5 b) Category View  of Category Screen </li> </h3>
  <ul> 
    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master5"> A Simple UseCase of PageView Widget and Scrolling Horizontally </a></li>
+    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master6"> A Simple UseCase of PageView Widget and Scrolling Vertically </a></li>
   </ul>
 </ul>
 </ul>
