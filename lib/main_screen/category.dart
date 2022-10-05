@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:multistoreapp/categories/electronics_category.dart';
+import 'package:multistoreapp/categories/men_category.dart';
 import 'package:multistoreapp/widgets/fake_search.dart';
+
+import '../categories/accessories_category.dart';
+import '../categories/bags_category.dart';
+import '../categories/shoes_category.dart';
+import '../categories/women_category.dart';
 
 //global variable
 List<ItemsData> items =[
@@ -97,12 +104,13 @@ final PageController pgcontroller = PageController();
         },
         scrollDirection: Axis.vertical,
         children: const <Widget>[
-          Center(child: Text('men category'),),
-          Center(child: Text('Women category'),),
-          Center(child: Text('Shoes category'),),
-          Center(child: Text('Bags category'),),
-          Center(child: Text('Electronics category'),),
-          Center(child: Text('Accessories category'),),
+
+          MenCategory(),
+          WomenCategory(),
+          ShoesCategory(),
+          BagsCategory(),
+          ElectronicsCategory(),
+          AccessoriesCategory(),
           Center(child: Text('Home and Garden Category'),),
           Center(child: Text('Kids  Category'),),
           Center(child: Text('Beauty  Category'),),
