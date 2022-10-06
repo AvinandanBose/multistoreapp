@@ -58,6 +58,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
     <h3><li> 5 e)Adding Slider Bar </li> </h3>
     <ul>
     <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master15">A Simple UseCase of RotatedBox widget </a></li>
+    <h3> <ins><i> Now coming back to Project </i></ins></h3>
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master21">Adding Slider Bar </a></li>
     </ul>
   
