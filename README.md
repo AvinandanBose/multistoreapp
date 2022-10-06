@@ -45,7 +45,8 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
     <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master10">A Simple UseCase of Row,Column,Container And List.generate With Some Design</a></li></h3>
     <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master11">A Simple UseCase of Wrap Widget And List.generate </a></li></h3>
     <h3> <ins><i>Grid Widget in Flutter </i></ins></h3>
-    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master12">A Simple UseCase of GridView.builder widget </a></li></h3>
+    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master12">A Simple UseCase of GridView.Builder widget </a></li></h3>
+    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master13">A Simple UseCase of GridView.Count widget </a></li></h3>
   </ul>
   
 </ul>
