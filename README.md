@@ -52,7 +52,9 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master19">Applying GridView.Count and List.generate in our Project </a></li>
   </ul>
    <h3><li> 5 d) Sub Category Products Screen </li> </h3>
+   <ul>
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master20">Sub Category Products Screen </a></li>
+    </ul>
   
 </ul>
 </ul>
