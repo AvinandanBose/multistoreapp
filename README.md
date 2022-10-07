@@ -87,6 +87,10 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
    <ul>
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master32">Applying Fonts </a></li></h3>
     </ul>
+ <h3><li>B.AppBar Widgets</li> </h3>
+ ul>
+  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master33">AppBar Widgets(SubCategory of Minor Screen(1)) </a></li></h3>
+ </ul>
   </ul>
   
 </ul>
