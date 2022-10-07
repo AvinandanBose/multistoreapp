@@ -61,10 +61,9 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
     <h3> <ins><i> Now coming back to Project </i></ins></h3>
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master21">Adding Slider Bar </a></li>
     </ul>
-    <h3><li><ins><i> Out of Context </i></ins> </li> </h3>
+ <h3><li><ins><i> Out of Context </i></ins> </li> </h3>
     <ul>
-    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master16">A Simple UseCase of Drawer attribute of Scaffold Widget</a></li>
-    
+    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master16">A Simple UseCase of Drawer attribute of Scaffold Widget</a></li></h3>
     </ul>
   
 </ul>
