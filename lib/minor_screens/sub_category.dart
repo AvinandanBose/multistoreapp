@@ -15,6 +15,9 @@ class SubCategory extends StatelessWidget {
         title: Text(
           subcategName,
           style: const TextStyle(
+            fontFamily: 'Acme',
+            fontSize: 28,
+            letterSpacing: 1.5,
             color: Colors.black,
             fontWeight: FontWeight.bold
           ),
