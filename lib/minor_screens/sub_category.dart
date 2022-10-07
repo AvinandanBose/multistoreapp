@@ -13,16 +13,27 @@ class SubCategory extends StatelessWidget {
         elevation: 0,
         centerTitle: true,
         title: AppBarTitle(title: subcategName),
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back_ios_new, color: Colors.black),
-          onPressed: () {
-            Navigator.pop(context);
-          },
-        ),
+         leading: const AppBarBackButton(),
       ),
       body: Center(
         child: Text(mainCategName),
       ),
+    );
+  }
+}
+
+class AppBarBackButton extends StatelessWidget {
+  const AppBarBackButton({
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return IconButton(
+      icon: const Icon(Icons.arrow_back_ios_new, color: Colors.black),
+      onPressed: () {
+        Navigator.pop(context);
+      },
     );
   }
 }
