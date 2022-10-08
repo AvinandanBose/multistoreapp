@@ -106,9 +106,8 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
  </ul>
  <h3><li>5 g)Customer Profile Screen Part1</li> </h3>
   <ul>
-   <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master18">A Simple UseCase of Custom Scroll View, Sliver App Bar, SliverToBoxAdaptar , ClipRRect,ClipRect, ClipPath  and Clip Oval.</a></li>
-   
-    <h3> <ins><i> Now coming back to Project </i></ins></h3>
+   <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master18">A Simple UseCase of Custom Scroll View, Sliver App Bar, SliverToBoxAdaptar , ClipRRect,ClipRect, ClipPath  and Clip Oval.</a></li></h3>
+   <h3> <ins><i> Now coming back to Project </i></ins></h3>
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master38"> Creation of Customer Profile Screen Part1(Applying Custom Scroll View,Sliver App Bar,SliverToBoxAdaptar and Text Button ) </a></li></h3>
   </ul>
 </ul>
