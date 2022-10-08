@@ -112,6 +112,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
  <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master20">A Simple UseCase of BoxDecoration and Linear Gradient (Inside a Container)</a></li></h3>
    
 <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master21">A Simple UseCase of TextButton </a></li></h3>
+<h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master22">A Simple UseCase of Fitted Box[Use for fitting A Widget inside A Widget especially Text] </a></li></h3>
    
    
    <h3> <ins><i> Now coming back to Project </i></ins></h3>
