@@ -104,7 +104,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
  <h3> <ins><i> Now coming back to Project </i></ins></h3>
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master37"> Creation of Cart Screen(Applying Bottom Sheet Attribute) </a></li></h3>
  </ul>
- 
+ <h3><li>5 g)Customer Profile Screen p1</li> </h3>
 </ul>
 </ul>
 
