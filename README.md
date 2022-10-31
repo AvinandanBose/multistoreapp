@@ -132,7 +132,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master42"> Customer Profile Screen Part3 - I </a></li></h3>
   
    <h3> <ins><i> Final Built </i></ins></h3>
-   <h3> <li><a href = ""> Customer Profile Screen Part3 (Final) </a></li></h3>
+   <h3> <li><a href = "">  </a></li></h3>
   </ul>
 </ul>
 </ul>
