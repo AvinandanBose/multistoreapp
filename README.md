@@ -140,7 +140,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
   <ul>
   <h3><li>5 j)a ) Dashboard Screen of Supplier Screen </li> </h3>
   <ul>
-  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master46">  Dashboard Screen part 1</a></li></h3>
+  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master46">  Dashboard Screen (part 1)</a></li></h3>
   <ul>
  </ul>
   </ul>
