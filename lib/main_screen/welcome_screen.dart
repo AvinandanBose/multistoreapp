@@ -23,7 +23,7 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
           ),
 
         ),
-        child: SafeArea //Gives a Safe Area to its Child Widget
+        child: SafeArea //Gives a Safe Area to its Child Widget though its parent widget: Container fills the Screen
           (
           child: Column(
             children: const <Widget>[
