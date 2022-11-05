@@ -157,6 +157,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master51">  Welcome Screen Part 1 → d (BoxDecoration) </a></li></h3>
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master52">  Welcome Screen Part 1 → e </a></li></h3>
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master53">  Welcome Screen Part 1 → f(Refactoring {mainscreen/cart}) </a></li></h3>
+    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master54">  Welcome Screen Part 1 → g(Refactoring(2) {widgets/yellow_button}) </a></li></h3>
   </ul>
  </ul>
 </ul>
