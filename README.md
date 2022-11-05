@@ -162,6 +162,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
   <h3> <ins><i> Final Built of Part 1 </i></ins></h3>
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master56">  Welcome Screen Part 1 → (Final Built) </a></li></h3>
   </ul>
+  <h3><li>5 k) b) →  Welcome Screen Part 2 </li> </h3>
  </ul>
 </ul>
 
