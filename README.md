@@ -166,7 +166,11 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
   <ul>
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master57">  Welcome Screen Part 2 → a (Creating  SignIn For Google/Facebook)  </a></li></h3>
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master58">  Welcome Screen Part 2 → b(Refactoring)  </a></li></h3>
+  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master59">  Welcome Screen Part 2 → b(Reshaping)  </a></li></h3>
+  <h3> <ins><i> Final Built of Part 2 </i></ins></h3>
+  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master59">  Welcome Screen Part 2 → (Final Built)  </a></li></h3>
   </ul>
+  <h3><li>5 k) c) →  Welcome Screen Part 3[Animation] </li> </h3>
  </ul>
 </ul>
 
