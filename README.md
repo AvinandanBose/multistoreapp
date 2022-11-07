@@ -188,7 +188,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master66">  Navigator.push  </a></li></h3>
     <h3> v/s </h3>
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master67">  Navigator.pushReplacement  </a></li></h3>
-    <h3> Note : Navigator.push remembers the previous page and provides extra back button to back but Navigator.pushReplacement replaces the current page with a new and hence there is no back button to back to previous page. </h3>
+    <h3> Note : Navigator.push remembers the previous page and provides extra back button to go back but Navigator.pushReplacement replaces the current page with a new and hence there is no back button to go back to the previous page. </h3>
     </ul>
   </ul>
  </ul>
