@@ -177,7 +177,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master62">  Welcome Screen Part 3[Animation]→ c (Animated Text Kit-Package Implementation) </a></li></h3>
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master63">  Welcome Screen Part 3[Animation]→ d (Animated Text Kit-Package Implementation-2) </a></li></h3>
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master64">  Welcome Screen Part 3[Animation]→ e (Refactor 2) </a></li></h3>
-  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master65">  Welcome Screen Part 3[Animation]→ e (Adding Additional Animated Texts) </a></li></h3>
+  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master65">  Welcome Screen Part 3[Animation]→ f (Adding Additional Animated Texts) </a></li></h3>
   </ul>
  </ul>
 </ul>
