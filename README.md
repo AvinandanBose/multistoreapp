@@ -198,7 +198,9 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master69">  Navigator.pushReplacementNamed (main and mainscreen/welcomescreen - Customer)  </a></li></h3>
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master70">  Navigator.pushReplacementNamed ( mainscreen/profile)  </a></li></h3>
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master71">  Navigator.pushReplacementNamed ( mainscreen/dashboard)  </a></li></h3>
-    
+    <h3> <ins><i> Final Built  </i></ins></h3>
+    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master71">  Navigation  </a></li></h3>
+    <h3> Note : Push and Replacement with Push occur in similar way but 'Named' creates a Mapping between a 'Name (Key)' and 'Route (Value)' pair. And whenever we trigger the 'Name' , it pushes to the corresponding 'Route' to which it is paired. And each Name is unique .    </h3>
    </ul>
   </ul>
       
