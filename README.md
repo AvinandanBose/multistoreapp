@@ -190,7 +190,9 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master67">  Navigator.pushReplacement  </a></li></h3>
     <h3> Note : Navigator.push remembers the previous page(i.e. doesnot dispose off the previous route) and provides extra back button to go back (to the previous route)but Navigator.pushReplacement replaces the current page with a new(dispose off the previous route and then enters the new route)  and hence there is no back button to go back to the previous page. </h3>
     </ul>
+   <h3><li>5 l) a) Navigator.pushNamed </li></h3>
   </ul>
+      
  </ul>
  
 </ul>
