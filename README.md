@@ -187,6 +187,8 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
    <ul>
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master66">  Navigator.push  </a></li></h3>
     <h3> v/s </h3>
+    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master67">  Navigator.pushReplacement  </a></li></h3>
+    <h3> Note : </h3>
     </ul>
   </ul>
  </ul>
