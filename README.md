@@ -203,7 +203,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
     <h3> Note : Push and Replacement with Push occur in similar way but 'Named' creates a Mapping between a 'Name (Key)' and 'Route (Value)' pair. And whenever we trigger the 'Name' , it pushes to the corresponding 'Route' to which it is paired. And each Name is unique .    </h3>
    </ul>
   </ul>
-     <h3><li>5 m) Adding Dashboard Screens [Problem] </li></h3>  
+     <h3><li>5 m) Adding Dashboard Screens [Problem] </li></h3> 
  </ul>
  
 </ul>
