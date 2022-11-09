@@ -209,7 +209,9 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
      <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master73">  Dashboard Problem (lib/dashboard_components & mainscreen/dashboard)  </a></li></h3>
     </ul>
        <h3><li>5 n) Adding Dashboard Screens [Solution] </li></h3>
-      <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master74">  Dashboard Solution (mainscreen/dashboard)  </a></li></h3>
+      <ul>
+      <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master_74">  Dashboard Solution (mainscreen/dashboard)  </a></li></h3>
+       </ul>
  </ul>
  
 </ul>
