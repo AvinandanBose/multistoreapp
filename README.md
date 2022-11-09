@@ -212,6 +212,9 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
       <ul>
       <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master_74">  Dashboard Solution (mainscreen/dashboard)  </a></li></h3>
        </ul>
+       <h3><li>5 o) AddingCustomer Screens  [Cart Problem] </li></h3>
+       <ul>
+       </ul>
  </ul>
  
 </ul>
