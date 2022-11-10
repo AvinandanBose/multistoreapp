@@ -4,7 +4,8 @@ import 'package:multistoreapp/widgets/appbar_widgets.dart';
 import 'package:multistoreapp/widgets/yellow_button.dart';
 
 class CartScreen extends StatefulWidget {
-  const CartScreen({Key? key}) : super(key: key);
+  final Widget? back;//Optional i.e. not required
+  const CartScreen({Key? key , this.back}) : super(key: key);
 
   @override
   State<CartScreen> createState() => _CartScreenState();
@@ -18,7 +19,7 @@ class _CartScreenState extends State<CartScreen> {
         child: Scaffold(
           appBar: AppBar(
             elevation: 0,
-            leading: const AppBarBackButton(),
+            leading: widget.back,
             backgroundColor: Colors.white,
             title: const AppBarTitle(title: 'Cart'),
             centerTitle: true,

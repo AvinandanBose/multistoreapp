@@ -3,6 +3,7 @@ import 'package:multistoreapp/main_screen/category.dart';
 import 'package:multistoreapp/main_screen/home.dart';
 import 'package:multistoreapp/main_screen/profile.dart';
 import 'package:multistoreapp/main_screen/stores.dart';
+import 'package:multistoreapp/widgets/appbar_widgets.dart';
 
 import 'cart.dart';
 
@@ -20,7 +21,7 @@ class _CustomerHomeScreenState extends State<CustomerHomeScreen> {
     CategoryScreen(),
     StoresScreen(),
     CartScreen(),
-   ProfileScreen(),
+    ProfileScreen(),
   ];
   @override
   Widget build(BuildContext context) {

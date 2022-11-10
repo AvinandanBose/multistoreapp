@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:multistoreapp/customer_screens/customer_orders.dart';
 import 'package:multistoreapp/customer_screens/wishlist.dart';
 import 'package:multistoreapp/main_screen/cart.dart';
+import 'package:multistoreapp/widgets/appbar_widgets.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -99,7 +100,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const CartScreen()),
+                                    builder: (context) => const CartScreen(
+                                      back: AppBarBackButton(),
+                                    ),
+                                  ),
                                 );
                               },
                               child: SizedBox(
@@ -122,7 +126,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const CustomerOrdersScreen()),
+                                      builder: (context) =>
+                                          const CustomerOrdersScreen()),
                                 );
                               },
                               child: SizedBox(
@@ -150,7 +155,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => const WishListScreen()),
+                                      builder: (context) =>
+                                          const WishListScreen()),
                                 );
                               },
                               child: SizedBox(
