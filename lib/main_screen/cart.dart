@@ -49,6 +49,7 @@ class _CartScreenState extends State<CartScreen> {
                   child: MaterialButton(
                     minWidth: MediaQuery.of(context).size.width * 0.6,
                     onPressed: () {
+                      Navigator.canPop(context)?Navigator.pop(context):
                       Navigator.pushReplacementNamed(context, 'customer_home');
                     },
                     child: const Text('continue shopping',
