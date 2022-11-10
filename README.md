@@ -220,6 +220,7 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
         <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master78">  Adding Back Button To Cart Screen (main_screen/cart)  </a></li></h3>
         <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master78">  Changing from Navigator.PushReplacement to Navigator.PushReplacementNamed (main_screen/cart)  </a></li></h3>
        </ul>
+       <h3><li>5 p) Navigating To Cart Screen  [Solution] </li></h3>
  </ul>
  
 </ul>
