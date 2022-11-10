@@ -224,12 +224,8 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
        <ul>
        <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master80">Navigating To Cart Screen  [Solution]-1 (mainscreen/cart and mainscreen/profile)    </a></li></h3>
         <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master81">Navigating To Cart Screen  [Solution]-2 (mainscreen/cart )[Final]    </a></li></h3>
-       <ul>
-     
-       
+       <ul>          
  </ul>
- 
- 
 </ul>
   <h3> <ins><i> Final Built  </i></ins></h3>
   👇
