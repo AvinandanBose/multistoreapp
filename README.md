@@ -218,9 +218,12 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
         <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master76">  Navigate To Customer Screens (main_screen/profile)  </a></li></h3>
         <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master77">  Solving Resolution Problem (main_screen/cart)  </a></li></h3>
         <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master78">  Adding Back Button To Cart Screen (main_screen/cart)  </a></li></h3>
-        <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master78">  Changing from Navigator.PushReplacement to Navigator.PushReplacementNamed (main_screen/cart)  </a></li></h3>
+        <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master79">  Changing from Navigator.PushReplacement to Navigator.PushReplacementNamed (main_screen/cart)  </a></li></h3>
        </ul>
        <h3><li>5 p) Navigating To Cart Screen  [Solution] </li></h3>
+       <ul>
+       <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master80">Navigating To Cart Screen  [Solution]-1 (mainscreen/cart and mainscreen/profile)    </a></li></h3>
+       <ul>
  </ul>
  
 </ul>
