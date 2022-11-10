@@ -235,4 +235,5 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
   </ul>
 
 </ul>
+ <h1> B. Firebase Authentication </h1>
 
