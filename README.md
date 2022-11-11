@@ -43,7 +43,8 @@ mainscreen/home & minor_screens/search
 
 ```Syntax
 
-[Widget Call : mainscreen/home]  & mainscreen/category[Stack and Positioned Child] & widgets/fake_search
+[Widget Call : mainscreen/home]  & mainscreen/category[Stack and Positioned Child] 
+& widgets/fake_search
 
 ```
 
