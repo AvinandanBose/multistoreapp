@@ -4,30 +4,43 @@ This is a Multi Store Ecommerce App build on Dart and Flutter.
 <ul>
 <li><h3> 1. <a href = "https://github.com/AvinandanBose/multistoreapp/tree/master" >First Update(Bottom Navigation Bar)  </a> </h3> </li>
 
+<h3>
+
 ```Syntax
 
 mainscreen/customer_home
 
 ```
+</h3>
 
 <li><h3> 2. <a href = "https://github.com/AvinandanBose/multistoreapp/tree/master2" >Second Update(Home Screen Design(1)[Before Refactoring])  </a> </h3></li>
 
+<h3>
+
 ```Syntax
 
 mainscreen/home
 
 ```
+</h3>
 
 <li><h3> 3. <a href = "https://github.com/AvinandanBose/multistoreapp/tree/master3" >Third Update(Home Screen Design(2)[After Refactoring, And Implementing Indicator])  </a> </h3></li>
 
+<h3>
+
 ```Syntax
 
 mainscreen/home
 
 ```
 
+</h3>
+
 
 <li><h3> 4. <a href = "https://github.com/AvinandanBose/multistoreapp/tree/master4" >Fourth Update(Search Bar)  </a> </h3></li>
+
+
+<h3>
 
 ```Syntax
 
@@ -35,11 +48,15 @@ mainscreen/home & minor_screens/search
 
 ```
 
+</h3>
+
 
 <li><h3> 5. Category Screen </a> </h3></li>
 <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master5">  Refactor(Fake Search Widget(User Defined)) and Stack Widget(In-built from library) with Positioned children. </a></li></h3>
 
+
+<h3>
 
 ```Syntax
 
@@ -47,30 +64,42 @@ mainscreen/home & minor_screens/search
 & widgets/fake_search
 
 ```
-
+</h3>
 
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master6">  Using MediaQuery and Adjusting Size Of Category Screen. </a></li></h3>
 
+<h3>
+
 ```Syntax
 
  mainscreen/category
 
 ```
+</h3>
+
+
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master7">  Creation of Two User Defined Widgets :1) Categview 2) SideNavigator. </a></li></h3>
 
+<h3>
+
 ```Syntax
 
  mainscreen/category
 
 ```
+</h3>
 
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master8">  Keeping MediaQuery To A Variable And Passing The Variable(Size Object[Stored in Material]) In Parameters Of Two User Defined Widgets :1) Categview 2) SideNavigator. </a></li></h3>
 
+<h3>
+
 ```Syntax
 
  mainscreen/category
 
 ```
+
+</h3>
 
 <h3><li> 5 a) Side Navigator of Category Screen </li> </h3>
 <ul>
@@ -82,52 +111,71 @@ mainscreen/home & minor_screens/search
 <h3> <ins><i> Now coming back to Project </i></ins></h3>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master9">  Applying ListView.builder in our project. </a></li></h3>
 
+<h3>
+
 ```Syntax
 
  mainscreen/category → SideNavigator
 
 ```
+</h3>
 
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master10">  Using SizedBox in ListView.builder to have space between ITEMS and Center Widget to keep ITEMS in Center. </a></li></h3>
 
+
+<h3>
+
 ```Syntax
 
  mainscreen/category → SideNavigator
 
 ```
-
+</h3>
 
 <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master11"> Using List as Global and Calling It In ListView.builder . </a></li></h3>
 
+<h3>
+
 ```Syntax
 
  mainscreen/category 
 
 ```
-
+</h3>
 <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master12"> When List is a Class Type and  Passing each element of List in ListView.builder through the help of a Class. </a></li></h3>
 
+<h3>
+
 ```Syntax
 
  mainscreen/category 
 
 ```
+</h3>
 
 <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master13"> In a big Sized Box taking a list of Containers through ListView.builder </a></li></h3>
 
+<h3>
+
 ```Syntax
 
  mainscreen/category 
 
 ```
 
+</h3>
+
 <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master14"> Activating color (White) when set to True for Each Container , While others remain false(Final) </a></li></h3>
+
+<h3>
 
 ```Syntax
 
  mainscreen/category → SideNavigator
 
 ```
+
+</h3>
 
 </ul>
 <h3><li> 5 b) Category View  of Category Screen </li> </h3>
@@ -137,29 +185,41 @@ mainscreen/home & minor_screens/search
     <h3> <ins><i> Now coming back to Project </i></ins></h3>
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master15"> Applying PageView Widget in Category View widget </a></li></h3>
    
+
+<h3>
+
 ```Syntax
 
  mainscreen/category → CategView
 
 ```
 
+</h3>
 <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master16">Applying PageController to Jump between Pages in PageView  </a></li></h3>
+
+<h3>
 
 ```Syntax
 
  mainscreen/category → SideNavigator & CategView
 
 ```
+</h3>
+
 <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master17">Applying Animation with Time Duration in PageController to Jump between Pages in PageView Widget  </a></li></h3>
 
+<h3>
 
 ```Syntax
 
  mainscreen/category → SideNavigator 
 
 ```
+</h3>
 
 <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master18">Applying initState() to select the First Item when the Category widget Loads.   </a></li></h3>
+
+<h3>
 
 ```Syntax
 
@@ -167,6 +227,7 @@ mainscreen/home & minor_screens/search
 
 ```
 
+</h3>
 
   </ul>
   <h3><li> 5 c) Grid View  of Category Screen </li> </h3>
@@ -181,37 +242,174 @@ mainscreen/home & minor_screens/search
     <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master13">A Simple UseCase of GridView.Count widget </a></li></h3>
    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master14">A Simple UseCase of GridView.Count and List.generate widget </a></li></h3>
    <h3> <ins><i> Now coming back to Project </i></ins></h3>
-   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master19">Applying GridView.Count and List.generate in our Project </a></li>
+   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master19">Applying GridView.Count and List.generate in our Project </a></li></h3>
+   
+   
+<h3>
+
+```Syntax
+
+  [Widget Call : main_screen/category] & categories/men_category 
+
+```
+</h3>
+
   </ul>
    <h3><li> 5 d) Sub Category Products Screen </li> </h3>
    <ul>
-   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master20">Sub Category Products Screen </a></li>
-    </ul>
-    <h3><li> 5 e)Adding Slider Bar </li> </h3>
-    <ul>
-    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master15">A Simple UseCase of RotatedBox widget </a></li>
-    <h3> <ins><i> Now coming back to Project </i></ins></h3>
-   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master21">Adding Slider Bar </a></li>
-    </ul>
+   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master20">Sub Category Products Screen </a></li></h3>
+   
+<h3>
+
+```Syntax
+
+  [Widget Call : categories/men_category] & minor_screens/sub_category 
+
+```
+
+</h3>
+
+</ul>
+<h3><li> 5 e)Adding Slider Bar </li> </h3>
+<ul>
+<h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master15">A Simple UseCase of RotatedBox widget </a></li>
+ <h3> <ins><i> Now coming back to Project </i></ins></h3>
+ <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master21">Adding Slider Bar </a></li>
+ 
+<h3>
+
+```Syntax
+
+  categories/men_category 
+
+```
+
+</h3>
+
+
+ </ul>
  <h3><li><ins><i> Out of Context </i></ins> </li> </h3>
-    <ul>
-    <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master16">A Simple UseCase of Drawer attribute of Scaffold Widget(Drawer Widget)</a></li></h3>
+ <ul>
+ <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master16">A Simple UseCase of Drawer attribute of Scaffold Widget(Drawer Widget)</a></li></h3>
     </ul>
  <h3><li>5 f) Refactoring Code</li> </h3>
  <ul>
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master22">Refactoring Code(1)</a></li></h3>
+ 
+ <h3>
+
+```Syntax
+
+  categories/men_category 
+
+```
+
+</h3>
+
+ 
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master23">Refactoring Code(2)</a></li></h3>
+ 
+<h3>
+
+```Syntax
+
+  [Widget Call : categories/men_category ] & widgets/categ_widgets
+
+```
+
+</h3>
+ 
  </ul>
  <h3><li>5 g)Adding Category Screens</li> </h3>
   <ul>
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master24">Women Category Screen</a></li></h3>
+ 
+ <h3>
+
+```Syntax
+
+  [Widget Call : main_screen/category] & categories/women_category 
+
+```
+</h3>
+ 
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master25">Shoes Category Screen</a></li></h3>
+ 
+  <h3>
+
+```Syntax
+
+  [Widget Call : main_screen/category] & categories/shoes_category 
+
+```
+</h3>
+
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master26">Bags Category Screen</a></li></h3>
+ 
+  <h3>
+
+```Syntax
+
+  [Widget Call : main_screen/category] & categories/bags_category 
+
+```
+</h3>
+
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master27">Electronics Category Screen</a></li></h3>
+ 
+<h3>
+
+```Syntax
+
+  [Widget Call : main_screen/category] & categories/electronics_category 
+
+```
+</h3>
+
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master28">Accessories Category Screen</a></li></h3>
+ 
+<h3>
+
+```Syntax
+
+  [Widget Call : main_screen/category] & categories/accessories_category 
+
+```
+</h3>
+
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master29">Home And Garden Category Screen</a></li></h3>
+ 
+ <h3>
+
+```Syntax
+
+  [Widget Call : main_screen/category] & categories/homegarden_category 
+
+```
+</h3>
+
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master30">Kids Category Screen</a></li></h3>
+ 
+<h3>
+
+```Syntax
+
+  [Widget Call : main_screen/category] & categories/kids_category 
+
+```
+</h3>
+
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master31">Beauty Category Screen</a></li></h3>
+ 
+ <h3>
+
+```Syntax
+
+  [Widget Call : main_screen/category] & categories/beauty
+
+```
+</h3>
+
  </ul>
   <h3><li>5 f)Fonts And AppBar Widgets</li> </h3>
  <ul>
@@ -222,19 +420,73 @@ mainscreen/home & minor_screens/search
  <h3><li>B.AppBar Widgets</li> </h3>
  <ul>
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master33">AppBar Widgets(SubCategory of Minor Screen(1)) </a></li></h3>
+  
+  
+  <h3>
+
+```Syntax
+
+  minor_screens/sub_category
+
+```
+</h3>
+
+
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master34">AppBar Widgets(SubCategory of Minor Screen(2)) </a></li></h3>
+  
+<h3>
+
+```Syntax
+
+  minor_screens/sub_category
+
+```
+</h3>
+
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master35">Final Creation of AppBar Widgets file Under Widget Directory </a></li></h3>
+  
+   <h3>
+
+```Syntax
+
+  [Widget Call :  minor_screens/sub_category] & widgets/appbar_widgets
+
+```
+</h3>
+  
  </ul>
  </ul>
  <h3><li>5 g)Stores Screen</li> </h3>
  <ul>
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master36"> Creation of Stores Screen </a></li></h3>
+  
+ <h3>
+
+```Syntax
+
+  [Widget Call : main_screen/customer_home] & main_screen/stores
+
+```
+</h3>
+
  </ul>
  <h3><li>5 f)Cart Screen</li> </h3>
  <ul>
  <h3> <li><a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master17">A Simple UseCase of BottomSheet Attribute of Scaffold widget </a></li>
+ 
  <h3> <ins><i> Now coming back to Project </i></ins></h3>
  <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master37"> Creation of Cart Screen(Applying Bottom Sheet Attribute) </a></li></h3>
+ 
+<h3>
+
+```Syntax
+
+  [Widget Call : main_screen/customer_home] & main_screen/cart
+
+```
+</h3>
+
+
  </ul>
  <h3><li>5 g)Customer Profile Screen Part1</li> </h3>
   <ul>
@@ -249,36 +501,173 @@ mainscreen/home & minor_screens/search
    
    <h3> <ins><i> Now coming back to Project </i></ins></h3>
     <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master38"> Creation of Customer Profile Screen Part1(Applying Custom Scroll View,Sliver App Bar,SliverToBoxAdaptar and Text Button ) </a></li></h3>
+    
+<h3>
+
+```Syntax
+
+[Widget Call : main_screen/customer_home] & main_screen/profile
+
+```
+</h3>
   </ul>
 <h3><li>5 h)Customer Profile Screen Part2</li> </h3>
   <ul>
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master39"> Customer Profile Screen Part2 - I </a></li></h3>
+  
+  <h3>
+
+```Syntax
+
+main_screen/profile
+
+```
+</h3>
+
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master40"> Customer Profile Screen Part2 - II (Refactoring) </a></li></h3>
+  
+<h3>
+
+```Syntax
+
+main_screen/profile
+
+```
+</h3>
+
+
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master41"> Customer Profile Screen Part2 - III (Refactoring) </a></li></h3>
-   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master41"> Customer Profile Screen Part2 - IV (Refactoring) </a></li></h3>
+   
+ <h3>
+
+```Syntax
+
+main_screen/profile
+
+```
+</h3>
+
+
+   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master42"> Customer Profile Screen Part2 - IV (Refactoring) </a></li></h3>
+   
+<h3>
+
+```Syntax
+
+main_screen/profile
+
+```
+</h3>
+
    <h3> <ins><i> Final Built </i></ins></h3>
-   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master41"> Customer Profile Screen Part2 (Final) </a></li></h3>
+  
+   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master42"> Customer Profile Screen Part2 (Final) </a></li></h3>
+   
+ <h3>
+
+```Syntax
+
+main_screen/profile
+
+```
+</h3>
+
   </ul>
   <h3><li>5 i)Customer Profile Screen Part3</li> </h3>
   <ul>
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master43"> Customer Profile Screen Part3 - I </a></li></h3>
+  
+  
+<h3>
+
+```Syntax
+
+main_screen/profile
+
+```
+</h3>
+
+
   <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master44"> Customer Profile Screen Part3 - II </a></li></h3>
+  
+<h3>
+
+```Syntax
+
+main_screen/profile
+
+```
+</h3>
+
    <h3> <ins><i> Final Built </i></ins></h3>
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master44"> Customer Profile Screen Part3 - Final Built</a></li></h3>
+   
+   <h3>
+
+```Syntax
+
+main_screen/profile
+
+```
+</h3>
+
+
   </ul>
   <h3><li>5 j)Supplier Home Screen</li> </h3>
   <ul>
    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master45"> Supplier Home Screen (Final Built) </a></li></h3>
+   
+<h3>
+
+```Syntax
+
+main_screen/supplierhomescreen
+
+```
+</h3>
+
+
    <ul>
     <h3><li>5 j)a ) Dashboard Screen of Supplier Screen </li> </h3>
     <ul>
       <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master46">  Dashboard Screen (part 1)</a></li></h3>
-      <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master47">  Dashboard Screen (part 2)</a></li></h3>
-      <h3> <ins><i> Final Built </i></ins></h3>
-      <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master47">  Dashboard Screen (Final Built) </a></li></h3>
-    </ul>
-   </ul>
-  </ul>
+      
+<h3>
+
+```Syntax
+
+[Widget Call : main_screen/supplierhomescreen] & main_screen/dashboard
+
+```
+</h3>
+
+<h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master47">  Dashboard Screen (part 2)</a></li></h3>
+      
+<h3>
+
+```Syntax
+
+ main_screen/dashboard
+
+```
+</h3>
+
+<h3> <ins><i> Final Built </i></ins></h3>
+<h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master47">  Dashboard Screen (Final Built) </a></li></h3>
+      
+<h3>
+
+```Syntax
+
+ main_screen/dashboard
+
+```
+</h3>
+
+ </ul>
+ </ul>
+ </ul>
+  
 <h3><li>5 k)  Welcome Screen [mainscreen/welcomescreen] </li> </h3>
      <ul>
       <h3><li>5 k) a) →  Welcome Screen Part 1 </li> </h3>
