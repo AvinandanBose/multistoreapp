@@ -1,3 +1,7 @@
+
+
+
+
 # multistoreapp
 
 A new Flutter project.
@@ -14,3 +18,6 @@ A few resources to get you started if this is your first Flutter project:
 For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
+
+
+https://user-images.githubusercontent.com/38869235/201484899-f3a4f2b1-0e03-463a-8edb-b0715c417bd6.mp4
