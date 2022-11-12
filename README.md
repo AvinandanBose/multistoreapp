@@ -759,4 +759,22 @@ main_screen/dashboard
 
 </ul>
  <h1> B. Firebase Authentication </h1>
+ <ul>
+  <h3> 1. Authentication Form  Design </a></li></h1>
+  <ul>
+   <h3> <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master82"> Authentication Form  Design → a  </a></li></h3>   </h3>
+   
+ <h3>
+
+```Syntax
+
+ PushToPage : main_screen/welcome_screen
+ NamedCall : main
+ PageCreated : auth/customer_signIn
+
+```
+</h3>
+
+  </ul>
+ </ul>
 
