@@ -774,6 +774,16 @@ main_screen/dashboard
 
 ```
 </h3>
+    <h3> <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master83"> Authentication Form  Design → (FInal)  </a></li></h3>   </h3>
+   
+   <h3>
+
+```Syntax
+
+ auth/customer_signIn
+
+```
+</h3>
 
   </ul>
  </ul>
