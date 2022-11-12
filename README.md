@@ -637,7 +637,8 @@ main_screen/supplierhomescreen
 
 ```Syntax
 
-[Widget Call : main_screen/supplierhomescreen] & main_screen/dashboard
+[Widget Call : main_screen/supplierhomescreen] & 
+main_screen/dashboard
 
 ```
 </h3>
