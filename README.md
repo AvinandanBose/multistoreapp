@@ -760,9 +760,9 @@ main_screen/dashboard
 </ul>
  <h1> B. Firebase Authentication </h1>
  <ul>
-  <h3> 1. Authentication Form  Design </a></li></h1>
+  <h3> <li> 1. Authentication Form  Design </li></h1>
   <ul>
-   <h3> <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master82"> Authentication Form  Design → a  </a></li></h3>   </h3>
+   <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master82"> Authentication Form  Design → a  </a></li></h3>   
    
  <h3>
 
@@ -774,7 +774,7 @@ main_screen/dashboard
 
 ```
 </h3>
-    <h3> <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master83"> Authentication Form  Design → (FInal)  </a></li></h3>   </h3>
+    <h3> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master83"> Authentication Form  Design → (FInal)  </a></li></h3>   
    
    <h3>
 
@@ -785,6 +785,19 @@ main_screen/dashboard
 ```
 </h3>
 
+  </ul>
+  <h3><li> 2.Refactor  </li></h1>
+  <ul>
+  <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master84"> Refactor → a  </a></li></h3>
+  
+  <h3>
+  
+  ```Syntax
+
+ auth/customer_signIn
+
+```
+</h3>
   </ul>
  </ul>
 
