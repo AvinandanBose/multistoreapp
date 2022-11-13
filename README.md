@@ -819,5 +819,20 @@ refactor call: widgets/auth_widgets
 
 </ul>
 <h3><li> 3.Show / Hide Password Typing  </li></h1>
+ 
+<ul>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master86"> Show / Hide Password Typing (Final)  </a></li></h3>
+ 
+ ```Syntax
+
+auth/customer_signIn
+ 
+widgets/auth_widgets → inputDecoration 
+
+```
+</h3>
+  
+ </ul>
+
  </ul>
 
