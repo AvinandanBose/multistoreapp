@@ -823,6 +823,9 @@ refactor call: widgets/auth_widgets
 <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master86"> Show / Hide Password Typing (Final)  </a></li></h3>
  
+ 
+ <h3>
+  
  ```Syntax
 
 auth/customer_signIn
