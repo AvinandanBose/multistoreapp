@@ -111,10 +111,11 @@ class AuthHeaderLabel extends StatelessWidget {
 }
 
 InputDecoration inputDecoration(
-    {required String labeltext, required String hintext}) {
+    {required String labeltext, required String hintext, required Icon iconpref}) {
   return InputDecoration(
     labelText: labeltext,
     hintText: hintext,
+    prefixIcon: iconpref,
     border: OutlineInputBorder(
       borderRadius: BorderRadius.circular(25),
     ),

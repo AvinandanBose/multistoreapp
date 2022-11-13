@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import 'package:multistoreapp/widgets/auth_widgets.dart';
@@ -11,6 +10,8 @@ class CustomerRegister extends StatefulWidget {
 }
 
 class _CustomerRegisterState extends State<CustomerRegister> {
+  bool passwordVisibility = true;
+  bool isPassTextVisibility = true;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -81,8 +82,13 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   child: TextFormField(
                     keyboardType: TextInputType.text,
                     decoration: inputDecoration(
-                        labeltext: 'Full Name',
-                        hintext: 'Enter Your Full Name'),
+                      labeltext: 'Full Name',
+                      hintext: 'Enter Your Full Name',
+                      iconpref: const Icon(
+                        Icons.person,
+                        color: Colors.purple,
+                      ),
+                    ),
                   ),
                 ),
                 Padding(
@@ -91,14 +97,42 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                     keyboardType: TextInputType.emailAddress,
                     decoration: textFormDecoration.copyWith(
                         labelText: 'Email Address',
-                        hintText: 'Enter Your Email Address'),
+                        hintText: 'Enter Your Email Address',
+                        prefixIcon: const Icon(
+                          Icons.email,
+                          color: Colors.purple,
+                        )),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: TextFormField(
+                    obscureText: isPassTextVisibility,
                     decoration: textFormDecoration.copyWith(
-                        labelText: 'Password', hintText: 'Enter Your Password'),
+                      labelText: 'Password',
+                      hintText: 'Enter Your Password',
+                      prefixIcon: const Icon(
+                        Icons.lock,
+                        color: Colors.purple,
+                      ),
+                      suffixIcon: IconButton(
+                        onPressed: () {
+                          setState(() {
+                            passwordVisibility = !passwordVisibility;
+                            isPassTextVisibility = !isPassTextVisibility;
+                          });
+                        },
+                        icon: passwordVisibility
+                            ? const Icon(
+                                Icons.remove_red_eye,
+                                color: Colors.purple,
+                              )
+                            : const Icon(
+                                Icons.visibility_off,
+                                color: Colors.purple,
+                              ),
+                      ),
+                    ),
                   ),
                 ),
                 HaveAccount(
@@ -106,7 +140,10 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   actionLabel: 'Log In',
                   onpressed: () {},
                 ),
-                 AuthMainButton(onPressed: (){}, mainButtonLabel: 'Sign Up',)
+                AuthMainButton(
+                  onPressed: () {},
+                  mainButtonLabel: 'Sign Up',
+                )
               ],
             ),
           ),
@@ -115,4 +152,3 @@ class _CustomerRegisterState extends State<CustomerRegister> {
     );
   }
 }
-
