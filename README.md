@@ -816,6 +816,8 @@ refactor call: widgets/auth_widgets
 
 ```
 </h3>
+
 </ul>
+<h3><li> 3.Show / Hide Password Typing  </li></h1>
  </ul>
 
