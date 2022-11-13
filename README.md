@@ -836,6 +836,20 @@ widgets/auth_widgets → inputDecoration
 </h3>
   
  </ul>
+<h3><li> 4.Text Form Field Validation  </li></h1>
+
+<ul>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master87"> Text Form Field Validation (Final)  </a></li></h3>
+</ul>
+
+ <h3>
+ 
+ ```Syntax
+
+auth/customer_signIn
+ 
+```
+</h3>
 
  </ul>
 
