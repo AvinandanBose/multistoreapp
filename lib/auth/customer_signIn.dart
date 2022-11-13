@@ -20,28 +20,9 @@ class _CustomerRegisterState extends State<CustomerRegister> {
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Column(
-              // mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: <Widget>[
-                      const Text(
-                        'Sign Up',
-                        style: TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
-                      ),
-                      IconButton(
-                        onPressed: () {
-                          Navigator.pushReplacementNamed(context, 'welcome_screen');
-                        },
-                        icon: const Icon(
-                          Icons.home_work,
-                          size: 40,
-                        ),
-                      ),
-                    ],
-                  ),
+                const AuthHeaderLabel(
+                  headerLabel: 'Sign Up',
                 ),
                 Row(
                   children: <Widget>[
@@ -98,125 +79,33 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: TextFormField(
                     keyboardType: TextInputType.text,
-                    decoration: InputDecoration(
-                      labelText: 'Full Name',
-                      hintText: 'Enter Your Full Name',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          color: Colors.purple,
-                          width: 1,
-                        ),
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          color: Colors.deepOrangeAccent,
-                          width: 2,
-                        ),
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                    ),
+                    decoration: inputDecoration(
+                        labeltext: 'Full Name',
+                        hintext: 'Enter Your Full Name'),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: TextFormField(
                     keyboardType: TextInputType.emailAddress,
-                    decoration: InputDecoration(
-                      labelText: 'Email Address',
-                      hintText: 'Enter Your Email Address',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          color: Colors.purple,
-                          width: 1,
-                        ),
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          color: Colors.deepOrangeAccent,
-                          width: 2,
-                        ),
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                    ),
+                    decoration: textFormDecoration.copyWith(
+                        labelText: 'Email Address',
+                        hintText: 'Enter Your Email Address'),
                   ),
                 ),
                 Padding(
                   padding: const EdgeInsets.symmetric(vertical: 10),
                   child: TextFormField(
-
-                    decoration: InputDecoration(
-                      labelText: 'Password',
-                      hintText: 'Enter Your Password',
-                      border: OutlineInputBorder(
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      enabledBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          color: Colors.purple,
-                          width: 1,
-                        ),
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                      focusedBorder: OutlineInputBorder(
-                        borderSide: const BorderSide(
-                          color: Colors.deepOrangeAccent,
-                          width: 2,
-                        ),
-                        borderRadius: BorderRadius.circular(25),
-                      ),
-                    ),
+                    decoration: textFormDecoration.copyWith(
+                        labelText: 'Password', hintText: 'Enter Your Password'),
                   ),
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  children: <Widget>[
-                    const Text(
-                      'already have account?',
-                      style: TextStyle(
-                        fontSize: 16,
-                        fontStyle: FontStyle.italic,
-                      ),
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: const Text(
-                        'Log In',
-                        style: TextStyle(
-                          color: Colors.purple,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20,
-                        ),
-                      ),
-                    ),
-                  ],
+                HaveAccount(
+                  haveAccount: 'already have account?',
+                  actionLabel: 'Log In',
+                  onpressed: () {},
                 ),
-                Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 30),
-                  child: Material(
-                    color: Colors.purple,
-                    borderRadius: BorderRadius.circular(25),
-                    child: MaterialButton(onPressed: () {  },
-                      minWidth: double.infinity,
-                      child: const Text(
-                        'Sign Up',
-                        style: TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white,
-                        ),
-                      ),
-
-                    ),
-                  ),
-                )
+                 AuthMainButton(onPressed: (){}, mainButtonLabel: 'Sign Up',)
               ],
             ),
           ),
@@ -225,3 +114,160 @@ class _CustomerRegisterState extends State<CustomerRegister> {
     );
   }
 }
+
+class AuthMainButton extends StatelessWidget {
+  final String mainButtonLabel;
+  final Function onPressed;
+  const AuthMainButton({
+    required this.onPressed,
+    required this.mainButtonLabel,
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.symmetric(vertical: 30),
+      child: Material(
+        color: Colors.purple,
+        borderRadius: BorderRadius.circular(25),
+        child: MaterialButton(
+          onPressed: (){
+            onPressed();
+          },
+          minWidth: double.infinity,
+          child:  Text(
+            mainButtonLabel,
+            style: const TextStyle(
+              fontSize: 24,
+              fontWeight: FontWeight.bold,
+              color: Colors.white,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+class HaveAccount extends StatelessWidget {
+  final Function onpressed;
+  final String haveAccount;
+  final String actionLabel;
+  const HaveAccount({
+    required this.actionLabel,
+    required this.haveAccount,
+    required this.onpressed,
+    Key? key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: <Widget>[
+        Text(
+          haveAccount,
+          style: const TextStyle(
+            fontSize: 16,
+            fontStyle: FontStyle.italic,
+          ),
+        ),
+        TextButton(
+          onPressed : () {
+            onpressed();
+          },
+          child: Text(
+            actionLabel,
+            style: const TextStyle(
+              color: Colors.purple,
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class AuthHeaderLabel extends StatelessWidget {
+  final String headerLabel;
+
+  const AuthHeaderLabel({
+    Key? key,
+    required this.headerLabel,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: <Widget>[
+          Text(
+            headerLabel,
+            style: const TextStyle(fontSize: 40, fontWeight: FontWeight.bold),
+          ),
+          IconButton(
+            onPressed: () {
+              Navigator.pushReplacementNamed(context, 'welcome_screen');
+            },
+            icon: const Icon(
+              Icons.home_work,
+              size: 40,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+InputDecoration inputDecoration(
+    {required String labeltext, required String hintext}) {
+  return InputDecoration(
+    labelText: labeltext,
+    hintText: hintext,
+    border: OutlineInputBorder(
+      borderRadius: BorderRadius.circular(25),
+    ),
+    enabledBorder: OutlineInputBorder(
+      borderSide: const BorderSide(
+        color: Colors.purple,
+        width: 1,
+      ),
+      borderRadius: BorderRadius.circular(25),
+    ),
+    focusedBorder: OutlineInputBorder(
+      borderSide: const BorderSide(
+        color: Colors.deepOrangeAccent,
+        width: 2,
+      ),
+      borderRadius: BorderRadius.circular(25),
+    ),
+  );
+}
+
+var textFormDecoration = InputDecoration(
+  labelText: '',
+  hintText: '',
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.circular(25),
+  ),
+  enabledBorder: OutlineInputBorder(
+    borderSide: const BorderSide(
+      color: Colors.purple,
+      width: 1,
+    ),
+    borderRadius: BorderRadius.circular(25),
+  ),
+  focusedBorder: OutlineInputBorder(
+    borderSide: const BorderSide(
+      color: Colors.deepOrangeAccent,
+      width: 2,
+    ),
+    borderRadius: BorderRadius.circular(25),
+  ),
+);
