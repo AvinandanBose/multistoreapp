@@ -798,6 +798,24 @@ main_screen/dashboard
 
 ```
 </h3>
-  </ul>
+
+
+
+
+</ul>
+<ul>
+  <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master85"> Refactor → (Final)  </a></li></h3>
+  
+<h3>
+
+```Syntax
+
+auth/customer_signIn
+ 
+refactor call: widgets/auth_widgets
+
+```
+</h3>
+</ul>
  </ul>
 
