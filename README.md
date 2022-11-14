@@ -90,3 +90,9 @@ Note: We can also use here ? instead of *
 
 Final(2): RegExp(r'^(([a-zA-Z0-9]+[\-\_\.]?[a-zA-Z0-9]?[@]+[a-zA-Z0-9]{2,})+[\.][a-zA-Z]{2,3})+$')
 ```
+
+
+
+https://user-images.githubusercontent.com/38869235/201703315-f6669164-334b-4d9f-bdaa-452ad37552b6.mp4
+
+
