@@ -19,7 +19,7 @@ samples, guidance on mobile development, and a full API reference.
  
  ```Syntax
 
-Reg Exp :
+Reg Exp (Works on Strings):
 
 
 UserName's Part
