@@ -889,7 +889,7 @@ moved: widgets/auth_widgets → EmailValidator
  
  ```Syntax
 
-Reg Exp :
+Reg Exp (Works On Strings):
 
 
 UserName's Part
