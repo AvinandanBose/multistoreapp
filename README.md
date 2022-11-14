@@ -871,6 +871,19 @@ auth/customer_signIn
 ```
    
 </h3>
+
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master89"> RegExp → Final   </a></li></h3>
+
+ <h3>
+ 
+ ```Syntax
+
+auth/customer_signIn
+moved: widgets/auth_widgets → EmailValidator
+ 
+```
+   
+</h3>
  
  <h3> Note :  </h3>
  
