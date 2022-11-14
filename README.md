@@ -862,6 +862,16 @@ auth/customer_signIn
 <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master88"> RegExp → a   </a></li></h3>
  
+   <h3>
+ 
+ ```Syntax
+
+auth/customer_signIn
+ 
+```
+   
+</h3>
+ 
  <h3> Note :  </h3>
  
  ```Syntax
