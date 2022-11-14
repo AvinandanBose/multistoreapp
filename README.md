@@ -862,9 +862,9 @@ auth/customer_signIn
 <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master88"> RegExp → a   </a></li></h3>
  
- <h3> Note : </h3>
+ <h3> Note :  </h3>
  
-  ```Syntax
+ ```Syntax
 
 Reg Exp :
 
@@ -929,8 +929,13 @@ To overcome the error we have to priortize the parts:
 
 Hence again Whole Expression must be closed with another Brace.
 
-Final : RegExp(r'^(([a-zA-Z0-9]+[\-\_\.]*[a-zA-Z0-9]*[@]+[a-zA-Z0-9]{2,})+[\.][a-zA-Z]{2,3})+$')
+Final(1): RegExp(r'^(([a-zA-Z0-9]+[\-\_\.]*[a-zA-Z0-9]*[@]+[a-zA-Z0-9]{2,})+[\.][a-zA-Z]{2,3})+$')
 
+Note: We can also use here ? instead of * 
+
+? → zero or one (optional)
+
+Final(2): RegExp(r'^(([a-zA-Z0-9]+[\-\_\.]?[a-zA-Z0-9]?[@]+[a-zA-Z0-9]{2,})+[\.][a-zA-Z]{2,3})+$')
 ```
  
  
