@@ -10,7 +10,8 @@ class CustomerRegister extends StatefulWidget {
 }
 
 class _CustomerRegisterState extends State<CustomerRegister> {
-  final  GlobalKey<FormState> formKeyForValidation = GlobalKey<FormState>();
+
+  final GlobalKey<FormState> formKeyForValidation = GlobalKey<FormState>();
   bool passwordVisibility = true;
   bool isPassTextVisibility = true;
   @override
@@ -23,7 +24,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
           child: Padding(
             padding: const EdgeInsets.all(16.0),
             child: Form(
-              key:formKeyForValidation ,
+              key: formKeyForValidation,
               child: Column(
                 children: <Widget>[
                   const AuthHeaderLabel(
@@ -32,8 +33,8 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   Row(
                     children: <Widget>[
                       const Padding(
-                        padding:
-                            EdgeInsets.symmetric(horizontal: 40.0, vertical: 20),
+                        padding: EdgeInsets.symmetric(
+                            horizontal: 40.0, vertical: 20),
                         child: CircleAvatar(
                           radius: 60,
                           backgroundColor: Colors.purpleAccent,
@@ -83,11 +84,10 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: TextFormField(
-                      validator: (value){
-                        if(value!.isEmpty){
+                      validator: (value) {
+                        if (value!.isEmpty) {
                           return 'Please Enter Your Full Name';
-                        }
-                        else{
+                        } else {
                           return null;
                         }
                       },
@@ -105,13 +105,16 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: TextFormField(
-                      validator: (value){
-                        if(value!.isEmpty){
+                      validator: (value) {
+                        if (value!.isEmpty) {
                           return 'Please Enter Your Email';
-                        }
-                        else{
+                        } else if (value.isValidEmail() == true) {
                           return null;
+                        } else if (value.isValidEmail() == false) {
+                          return 'Invalid Email';
                         }
+                          return null;
+
                       },
                       keyboardType: TextInputType.emailAddress,
                       decoration: textFormDecoration.copyWith(
@@ -126,11 +129,10 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: TextFormField(
-                      validator: (value){
-                        if(value!.isEmpty){
+                      validator: (value) {
+                        if (value!.isEmpty) {
                           return 'Please Enter Your Password';
-                        }
-                        else{
+                        } else {
                           return null;
                         }
                       },
@@ -169,10 +171,9 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   ),
                   AuthMainButton(
                     onPressed: () {
-                      if(formKeyForValidation.currentState!.validate()){
+                      if (formKeyForValidation.currentState!.validate()) {
                         print(' Valid');
-                      }
-                      else{
+                      } else {
                         print('Not Valid');
                       }
                     },
@@ -187,3 +188,13 @@ class _CustomerRegisterState extends State<CustomerRegister> {
     );
   }
 }
+
+
+extension EmailValidator on String {
+  bool isValidEmail() {
+    return RegExp(r'^(([a-zA-Z0-9]+[\-\_\.]*[a-zA-Z0-9]*[@]+[a-zA-Z0-9]{2,})+[\.][a-zA-Z]{2,3})+$')
+        .hasMatch(this);
+  }
+}
+
+//EmailValidator is name of extension
