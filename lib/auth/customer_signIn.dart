@@ -14,25 +14,7 @@ class CustomerRegister extends StatefulWidget {
 }
 
 class _CustomerRegisterState extends State<CustomerRegister> {
-  // Using The Key , We can call Snack bar multiple times
-  void showSnackBar() {
-    _scaffoldKey.currentState!.showSnackBar //Note Current State Can be Null,
-    // when no widget matches to Global Key i.e. ScaffoldMessengerKey
-      (
-      const SnackBar(
-        duration: Duration(seconds: 2),
-        backgroundColor: Colors.yellow,
-        content: Text(
-          'Please Fill The Fields',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-            fontSize: 18,
-            color: Colors.black,
-          ),
-        ),
-      ),
-    );
-  }
+
 
   late String name;
   late String email;
@@ -226,7 +208,8 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                           /*     ScaffoldMessenger.of(context).showSnackBar(
 
                           ); */
-                          showSnackBar(); //→ Call To Function
+                          MyMessageHandler mymessageHandler = MyMessageHandler();
+                          mymessageHandler.showSnackBar(message:'Please Fill All Fields' ,key: _scaffoldKey); //→ Call To Function
                         }
                       },
                       mainButtonLabel: 'Sign Up',
@@ -240,4 +223,28 @@ class _CustomerRegisterState extends State<CustomerRegister> {
       ),
     );
   }
+}
+
+class MyMessageHandler{
+
+  // Using The Key , We can call Snack bar multiple times
+  void showSnackBar({required var key, required String? message}) {
+    key.currentState!.showSnackBar //Note Current State Can be Null,
+    // when no widget matches to Global Key i.e. ScaffoldMessengerKey
+      (
+     SnackBar(
+        duration: const Duration(seconds: 2),
+        backgroundColor: Colors.yellow,
+        content: Text(
+          message!,
+          textAlign: TextAlign.center,
+          style: const TextStyle(
+            fontSize: 18,
+            color: Colors.black,
+          ),
+        ),
+      ),
+    );
+  }
+
 }
