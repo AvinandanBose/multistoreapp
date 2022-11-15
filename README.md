@@ -963,7 +963,14 @@ Final(2): RegExp(r'^(([a-zA-Z0-9]+[\-\_\.]?[a-zA-Z0-9]?[@]+[a-zA-Z0-9]{2,})+[\.]
  
  
 </ul>
+ <h3><li> 6.Saving Data Into Variables[So that the Variables Can Carry Data & Retrieve Data To/From Database]  </li></h1>
+<ul>
+<h3><li> Text Editing Controllers  </li></h1>
+<ul>
+</ul>
 
+<h3><li> Try to keep Variables as Private , in Dart Starting with '_' (Underscore ) means Private. [Data Hiding Concept of OOP] </li></h1>
+</ul>
 
  </ul>
 
