@@ -996,7 +996,7 @@ auth/customer_signIn
 
   </ul>
 <h3> <i>Note : Try to keep Variables as Private , in Dart Starting with '_' (Underscore ) means Private. [Data Hiding Concept of OOP] </i></h3>
-</ul>
+
 <h3><li> 3. SnackBar Class( Messenger of Scaffold) </li></h3>
 <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master92">SnackBar → a   </a></li></h3>
@@ -1023,6 +1023,35 @@ auth/customer_signIn
 <h3> <i>Note : Snackbar can be called more than Once , And this can be done with a Key provided by Scaffold Messenger and Key's Current State can be null when nothing is called , hence we must give null check (!) after calling Key's current State. </i></h3>
    
 </h3>
+
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master94">SnackBar → c [Encapsulating ShowSnackBar Func With A Class ](1)   </a></li></h3>
+
+<h3>
+
+```Syntax
+
+auth/customer_signIn
+ 
+```
+
+</h3>
+<h3> <i>Note : Here we call ShowSnackBar Func By Creation of Class's Object. </i></h3>
+
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master95">SnackBar → d [Encapsulating ShowSnackBar Func With A Class ](2)   </a></li></h3>
+
+<h3>
+
+```Syntax
+
+auth/customer_signIn
+ 
+```
+
+</h3>
+
+<h3> <i>Note : Here  ShowSnackBar Func accessed directly making the ShowSnackBar Func static eliminating the need for the creation of Object of the Class. </i></h3>
 </ul>
+</ul>
+
  </ul>
 
