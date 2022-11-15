@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 
 import 'package:multistoreapp/widgets/auth_widgets.dart';
 
-
-
 // final TextEditingController _nameController = TextEditingController();
 // final TextEditingController _emailController = TextEditingController();
 // final TextEditingController _passwordController = TextEditingController();
@@ -16,7 +14,6 @@ class CustomerRegister extends StatefulWidget {
 }
 
 class _CustomerRegisterState extends State<CustomerRegister> {
-
   late String name;
   late String email;
   late String password;
@@ -94,7 +91,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: TextFormField(
-                      onChanged: (value){
+                      onChanged: (value) {
                         name = value;
                       },
                       validator: (value) {
@@ -119,7 +116,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: TextFormField(
-                      onChanged: (value){
+                      onChanged: (value) {
                         email = value;
                       },
                       // controller: _emailController,
@@ -131,8 +128,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                         } else if (value.isValidEmail() == false) {
                           return 'Invalid Email';
                         }
-                          return null;
-
+                        return null;
                       },
                       keyboardType: TextInputType.emailAddress,
                       decoration: textFormDecoration.copyWith(
@@ -147,7 +143,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: TextFormField(
-                      onChanged: (value){
+                      onChanged: (value) {
                         password = value;
                       },
                       // controller: _passwordController,
@@ -194,17 +190,29 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   AuthMainButton(
                     onPressed: () {
                       if (formKeyForValidation.currentState!.validate()) {
-                       // setState(() {
-                       //   name = _nameController.text ;
-                       //   email = _emailController.text;
-                       //   password = _passwordController.text;
-                       // });
-                       print(name);
-                       print(email);
-                       print(password);
-
+                        // setState(() {
+                        //   name = _nameController.text ;
+                        //   email = _emailController.text;
+                        //   password = _passwordController.text;
+                        // });
+                        print(name);
+                        print(email);
+                        print(password);
                       } else {
-                        print('Not Valid');
+                        ScaffoldMessenger.of(context).showSnackBar(
+                          const SnackBar(
+                            duration: Duration(seconds: 2),
+                            backgroundColor: Colors.yellow,
+                            content: Text(
+                              'Please Fill The Fields',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(
+                                fontSize: 18,
+                                color: Colors.black,
+                              ),
+                            ),
+                          ),
+                        );
                       }
                     },
                     mainButtonLabel: 'Sign Up',
@@ -218,5 +226,3 @@ class _CustomerRegisterState extends State<CustomerRegister> {
     );
   }
 }
-
-
