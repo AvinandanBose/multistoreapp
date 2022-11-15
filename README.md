@@ -1062,6 +1062,19 @@ auth/customer_signIn
 ```
 
 </h3>
+
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master97">SnackBar → Final    </a></li></h3>
+
+<h3>
+
+```Syntax
+
+widgets/snackbar
+Widget Call :auth/customer_signIn
+ 
+```
+
+</h3>
 </ul>
 </ul>
 
