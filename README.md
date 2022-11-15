@@ -1020,6 +1020,7 @@ auth/customer_signIn
 auth/customer_signIn
  
 ```
+<h3> <i>Note : Snackbar can be called more than Once , And this can be done with a Key provided by Scaffold Messenger and Key's Current State can be null when nothing is called , hence we must give null check (!) after calling Key's current State. </i></h3>
    
 </h3>
 </ul>
