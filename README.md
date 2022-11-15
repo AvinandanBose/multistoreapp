@@ -1076,6 +1076,7 @@ Widget Call: auth/customer_signIn
 
 </h3>
 </ul>
+ <h3><li> 3. Image Picker </li></h3>
 </ul>
 
  </ul>
