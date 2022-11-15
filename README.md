@@ -1070,7 +1070,7 @@ auth/customer_signIn
 ```Syntax
 
 widgets/snackbar
-Widget Call :auth/customer_signIn
+Widget Call: auth/customer_signIn
  
 ```
 
