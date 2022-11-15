@@ -2,6 +2,12 @@ import 'package:flutter/material.dart';
 
 import 'package:multistoreapp/widgets/auth_widgets.dart';
 
+
+
+final TextEditingController _nameController = TextEditingController();
+final TextEditingController _emailController = TextEditingController();
+final TextEditingController _passwordController = TextEditingController();
+
 class CustomerRegister extends StatefulWidget {
   const CustomerRegister({Key? key}) : super(key: key);
 
@@ -10,6 +16,10 @@ class CustomerRegister extends StatefulWidget {
 }
 
 class _CustomerRegisterState extends State<CustomerRegister> {
+
+  late String name;
+  late String email;
+  late String password;
 
   final GlobalKey<FormState> formKeyForValidation = GlobalKey<FormState>();
   bool passwordVisibility = true;
@@ -91,6 +101,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                           return null;
                         }
                       },
+                      controller: _nameController,
                       keyboardType: TextInputType.text,
                       decoration: inputDecoration(
                         labeltext: 'Full Name',
@@ -105,6 +116,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: TextFormField(
+                      controller: _emailController,
                       validator: (value) {
                         if (value!.isEmpty) {
                           return 'Please Enter Your Email';
@@ -129,6 +141,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   Padding(
                     padding: const EdgeInsets.symmetric(vertical: 10),
                     child: TextFormField(
+                      controller: _passwordController,
                       validator: (value) {
                         if (value!.isEmpty) {
                           return 'Please Enter Your Password';
@@ -172,7 +185,15 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                   AuthMainButton(
                     onPressed: () {
                       if (formKeyForValidation.currentState!.validate()) {
-                        print(' Valid');
+                       setState(() {
+                         name = _nameController.text ;
+                         email = _emailController.text;
+                         password = _passwordController.text;
+                       });
+                       print(name);
+                       print(email);
+                       print(password);
+
                       } else {
                         print('Not Valid');
                       }
