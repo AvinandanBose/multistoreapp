@@ -208,8 +208,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                           /*     ScaffoldMessenger.of(context).showSnackBar(
 
                           ); */
-                          MyMessageHandler mymessageHandler = MyMessageHandler();
-                          mymessageHandler.showSnackBar(message:'Please Fill All Fields' ,key: _scaffoldKey); //→ Call To Function
+                          MyMessageHandler.showSnackBar(message:'Please Fill All Fields' ,key: _scaffoldKey); //→ Call To Function
                         }
                       },
                       mainButtonLabel: 'Sign Up',
@@ -228,7 +227,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
 class MyMessageHandler{
 
   // Using The Key , We can call Snack bar multiple times
-  void showSnackBar({required var key, required String? message}) {
+  static void showSnackBar({required var key, required String? message}) {
     key.currentState!.showSnackBar //Note Current State Can be Null,
     // when no widget matches to Global Key i.e. ScaffoldMessengerKey
       (
