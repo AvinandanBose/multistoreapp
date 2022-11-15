@@ -14,8 +14,11 @@ class CustomerRegister extends StatefulWidget {
 }
 
 class _CustomerRegisterState extends State<CustomerRegister> {
+  // Using The Key , We can call Snack bar multiple times
   void showSnackBar() {
-    _scaffoldKey.currentState!.showSnackBar(
+    _scaffoldKey.currentState!.showSnackBar //Note Current State Can be Null,
+    // when no widget matches to Global Key i.e. ScaffoldMessengerKey
+      (
       const SnackBar(
         duration: Duration(seconds: 2),
         backgroundColor: Colors.yellow,
@@ -37,7 +40,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
 
   final GlobalKey<FormState> formKeyForValidation = GlobalKey<FormState>();
   final GlobalKey<ScaffoldMessengerState> _scaffoldKey =
-      GlobalKey<ScaffoldMessengerState>();
+      GlobalKey<ScaffoldMessengerState>(); //→ Key
   bool passwordVisibility = true;
   bool isPassTextVisibility = true;
   @override
@@ -223,6 +226,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                           /*     ScaffoldMessenger.of(context).showSnackBar(
 
                           ); */
+                          showSnackBar(); //→ Call To Function
                         }
                       },
                       mainButtonLabel: 'Sign Up',
