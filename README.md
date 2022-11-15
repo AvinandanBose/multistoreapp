@@ -1010,6 +1010,18 @@ auth/customer_signIn
 ```
    
 </h3>
+
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master93">SnackBar → b [ScaffoldMesengerKey, ScaffoldMessengerState]   </a></li></h3>
+
+<h3>
+ 
+```Syntax
+
+auth/customer_signIn
+ 
+```
+   
+</h3>
 </ul>
  </ul>
 
