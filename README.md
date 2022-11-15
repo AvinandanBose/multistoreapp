@@ -1050,6 +1050,18 @@ auth/customer_signIn
 </h3>
 
 <h3> <i>Note : Here  ShowSnackBar Func accessed directly making the ShowSnackBar Func static eliminating the need for the creation of Object of the Class. </i></h3>
+
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master96">SnackBar → e [Designing the SnackBar]   </a></li></h3>
+
+<h3>
+
+```Syntax
+
+auth/customer_signIn
+ 
+```
+
+</h3>
 </ul>
 </ul>
 
