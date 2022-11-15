@@ -997,6 +997,6 @@ auth/customer_signIn
   </ul>
 <h3> <i>Note : Try to keep Variables as Private , in Dart Starting with '_' (Underscore ) means Private. [Data Hiding Concept of OOP] </i></h3>
 </ul>
-
+<h3><li> 3. SnackBar Class( Messenger of Scaffold) </li></h3>
  </ul>
 
