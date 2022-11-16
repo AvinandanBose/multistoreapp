@@ -1089,6 +1089,13 @@ Widget Call: auth/customer_signIn
 <img src='https://user-images.githubusercontent.com/38869235/202216248-b0f59946-c0ea-46d9-872a-fae3bbb58b8e.png' width="1000" height="400">
 
 <h3> <i>Note : Starting with version 0.8.1 It is no longer required to add android:requestLegacyExternalStorage="true" as an attribute to the <application> tag in AndroidManifest.xml </i> </h3> 
+ <ul>
+  
+ </ul>
+ <h3>  <li> 1. Accessing Image From Camera .</li></h3>
+  <ul>
+   <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master98">Accessing Image From Camera→ a    </a></li></h3>
+   </ul>
 
  
  </ul>
