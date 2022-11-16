@@ -1076,7 +1076,24 @@ Widget Call: auth/customer_signIn
 
 </h3>
 </ul>
- <h3><li> 3. Image Picker </li></h3>
+ <h3><li> 3. Image Picker [Dependency Package]</li></h3>
+ <ul>
+ <h3>  <li> 1st Include In Pubspec.yml file of the Project.</li></h3>
+ 
+ ![Screenshot (126)](https://user-images.githubusercontent.com/38869235/202214789-845b2724-7223-41c7-b5d0-7508ee4fb0fa.png)
+ 
+  <h3>  <li> 2nd Give Access To The Device .</li></h3>
+  <ul>
+<h3><li> Make → android:requestLegacyExternalStorage="true"  in AndroidManifest.xml (Dir: app/src/main/AndroidManifest.xml) . </li></h3>
+
+<img src='https://user-images.githubusercontent.com/38869235/202216248-b0f59946-c0ea-46d9-872a-fae3bbb58b8e.png' width="1000" height="400">
+
+<h3> <i>Note : Starting with version 0.8.1 It is no longer required to add android:requestLegacyExternalStorage="true" as an attribute to the <application> tag in AndroidManifest.xml </i> </h3> 
+
+ 
+ </ul>
+
+ </ul>
 </ul>
 
  </ul>
