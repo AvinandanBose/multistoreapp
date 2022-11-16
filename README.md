@@ -1093,9 +1093,22 @@ Widget Call: auth/customer_signIn
   
  </ul>
  <h3>  <li> 1. Accessing Image From Camera .</li></h3>
-  <ul>
-   <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master98">Accessing Image From Camera→ a    </a></li></h3>
-   </ul>
+ <ul>
+ <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master98">Accessing Image From Camera→ a    </a></li></h3>
+ 
+ <h3>
+
+```Syntax
+
+auth/customer_signIn
+ 
+```
+
+</h3>
+
+ <h3> <i>Note : XFile type used here by ImagePicker package is called <ins>CrossFile</ins> for Cross Platform (can be used for multiple platforms(like : Windows, Mac , iOS))</i> </h3> 
+ 
+ </ul>
 
  
  </ul>
