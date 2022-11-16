@@ -1106,7 +1106,7 @@ auth/customer_signIn
 
 </h3>
 
- <h3> <i>Note : XFile type used here by ImagePicker package is called <ins>CrossFile</ins> for Cross Platform (can be used for multiple platforms(like : Windows, Android , iOS))</i> </h3> 
+ <h3> <i>Note : XFile type used here by ImagePicker package is called <ins>CrossFile</ins> for Cross Platform (can be used for multiple platforms(like : Windows, Android , iOS)) and It wraps the bytes of a selected file, and its (platform-dependant) path.</i> </h3> 
  
  </ul>
 
