@@ -4,9 +4,7 @@ import 'package:multistoreapp/widgets/auth_widgets.dart';
 
 import 'package:multistoreapp/widgets/snackbar.dart';
 
-// final TextEditingController _nameController = TextEditingController();
-// final TextEditingController _emailController = TextEditingController();
-// final TextEditingController _passwordController = TextEditingController();
+import 'package:image_picker/image_picker.dart';
 
 class CustomerRegister extends StatefulWidget {
   const CustomerRegister({Key? key}) : super(key: key);
@@ -16,11 +14,23 @@ class CustomerRegister extends StatefulWidget {
 }
 
 class _CustomerRegisterState extends State<CustomerRegister> {
-
-
   late String name;
   late String email;
   late String password;
+
+  XFile? _imageFile;
+  void _pickImageFromCamera() async {
+    final XFile? pickedImage = await ImagePicker().pickImage(
+      source: ImageSource.camera,
+      maxHeight: 300,
+      maxWidth: 300,
+      imageQuality: 95,
+    );
+
+    setState(() {
+      _imageFile = pickedImage;
+    });
+  }
 
   final GlobalKey<FormState> formKeyForValidation = GlobalKey<FormState>();
   final GlobalKey<ScaffoldMessengerState> _scaffoldKey =
@@ -66,7 +76,9 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                                 ),
                               ),
                               child: IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  _pickImageFromCamera();
+                                },
                                 icon: const Icon(
                                   Icons.camera_alt,
                                   color: Colors.white,
@@ -85,7 +97,9 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                                 ),
                               ),
                               child: IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+
+                                },
                                 icon: const Icon(
                                   Icons.camera_alt,
                                   color: Colors.white,
@@ -109,7 +123,6 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                             return null;
                           }
                         },
-                        // controller: _nameController,
                         keyboardType: TextInputType.text,
                         decoration: inputDecoration(
                           labeltext: 'Full Name',
@@ -127,7 +140,6 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                         onChanged: (value) {
                           email = value;
                         },
-                        // controller: _emailController,
                         validator: (value) {
                           if (value!.isEmpty) {
                             return 'Please Enter Your Email';
@@ -140,12 +152,13 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                         },
                         keyboardType: TextInputType.emailAddress,
                         decoration: textFormDecoration.copyWith(
-                            labelText: 'Email Address',
-                            hintText: 'Enter Your Email Address',
-                            prefixIcon: const Icon(
-                              Icons.email,
-                              color: Colors.purple,
-                            )),
+                          labelText: 'Email Address',
+                          hintText: 'Enter Your Email Address',
+                          prefixIcon: const Icon(
+                            Icons.email,
+                            color: Colors.purple,
+                          ),
+                        ),
                       ),
                     ),
                     Padding(
@@ -154,7 +167,6 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                         onChanged: (value) {
                           password = value;
                         },
-                        // controller: _passwordController,
                         validator: (value) {
                           if (value!.isEmpty) {
                             return 'Please Enter Your Password';
@@ -198,19 +210,13 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                     AuthMainButton(
                       onPressed: () {
                         if (formKeyForValidation.currentState!.validate()) {
-                          // setState(() {
-                          //   name = _nameController.text ;
-                          //   email = _emailController.text;
-                          //   password = _passwordController.text;
-                          // });
                           print(name);
                           print(email);
                           print(password);
                         } else {
-                          /*     ScaffoldMessenger.of(context).showSnackBar(
-
-                          ); */
-                          MyMessageHandler.showSnackBar(message:'Please Fill All Fields' ,key: _scaffoldKey); //→ Call To Function
+                          MyMessageHandler.showSnackBar(
+                              message: 'Please Fill All Fields',
+                              key: _scaffoldKey); //→ Call To Function
                         }
                       },
                       mainButtonLabel: 'Sign Up',
@@ -225,4 +231,3 @@ class _CustomerRegisterState extends State<CustomerRegister> {
     );
   }
 }
-
