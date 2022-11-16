@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 
 import 'package:multistoreapp/widgets/auth_widgets.dart';
@@ -19,17 +21,27 @@ class _CustomerRegisterState extends State<CustomerRegister> {
   late String password;
 
   XFile? _imageFile;
+  late FileSystemException _pickedImageError;
   void _pickImageFromCamera() async {
-    final XFile? pickedImage = await ImagePicker().pickImage(
-      source: ImageSource.camera,
-      maxHeight: 300,
-      maxWidth: 300,
-      imageQuality: 95,
-    );
+    try {
+      final XFile? pickedImage = await ImagePicker().pickImage(
+        source: ImageSource.camera,
+        maxHeight: 300,
+        maxWidth: 300,
+        imageQuality: 95,
+      );
 
-    setState(() {
-      _imageFile = pickedImage;
-    });
+      setState(() {
+        _imageFile = pickedImage;
+      });
+    } on FileSystemException catch (e) {
+      setState(() {
+        _pickedImageError  = e;
+      });
+
+      print(_pickedImageError);
+      print(e.message);
+    }
   }
 
   final GlobalKey<FormState> formKeyForValidation = GlobalKey<FormState>();
@@ -97,9 +109,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                                 ),
                               ),
                               child: IconButton(
-                                onPressed: () {
-
-                                },
+                                onPressed: () {},
                                 icon: const Icon(
                                   Icons.camera_alt,
                                   color: Colors.white,
