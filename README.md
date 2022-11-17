@@ -1176,6 +1176,57 @@ auth/customer_signIn
  
 ```
 </ul>
+<h3>  <li> 6. Auto Reset After SignUp .</li></h3>
+ <ul>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master104"> Auto Reset After SignUp → Final   </a></li></h3>
+ 
+ <h3>
+
+```Syntax
+
+auth/customer_signIn
+  
+  
+```
+</h3>
+  
+<h3> <i><ins> Note: </ins></i></h3>
+ 
+```Syntax
+  
+Note:  GlobalKey<FormState>().currentState!.reset() → Reset Form
+Or: GlobalKey<FormState> key = GlobalKey<FormState>(); & key.currentState!.reset()
+Where , key is the Object of GlobalKey<FormState>
+  
+Similarly: XFile? image = XFile(''); 
+ Where: '' → blank path
+  
+XFile? pickedImage = ImagePicker().pickImage(source: ImageSource.camera);
+setState((){
+  image = pickedImage; 
+  
+  // Assigning blank path with the Source path of Camera
+  
+  });
+  
+Now Again:
+  
+  setState((){
+  image = pickedImage; 
+  
+  imageFile = null ; //Sets the path to blank again.
+  
+  });
+  
+Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
+  
+ Hence it is recommended that we must continue without assignment.
+  
+  i.e. 
+  
+   XFile? image;
+```
+</ul>
  
 </ul>
 
