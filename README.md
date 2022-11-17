@@ -1121,9 +1121,9 @@ auth/customer_signIn
 </h3>
  
  </ul>
- <h3>  <li> 2. Accessing Image From Camera .</li></h3>
+ <h3>  <li> 2. Accessing Image From Gallery .</li></h3>
  <ul>
- <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master100">Accessing Image From Camera→ A   </a></li></h3>
+ <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master100">Accessing Image From Gallery→ A   </a></li></h3>
  
  <h3>
 
