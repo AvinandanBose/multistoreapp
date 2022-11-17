@@ -1176,7 +1176,7 @@ auth/customer_signIn
  
 ```
 </ul>
-<h3>  <li> 6. Auto Reset After SignUp .</li></h3>
+<h3>  <li> 7. Auto Reset After SignUp .</li></h3>
  <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master104"> Auto Reset After SignUp → Final   </a></li></h3>
  
@@ -1229,6 +1229,6 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
 </ul>
  
 </ul>
-
+<h3> <li> 9. Create Firebase Project </li></h3>
  </ul>
 
