@@ -20,11 +20,12 @@ class _CustomerRegisterState extends State<CustomerRegister> {
   late String email;
   late String password;
 
+  final ImagePicker _picker = ImagePicker();
   XFile? _imageFile;
   late FileSystemException _pickedImageError;
   void _pickImageFromCamera() async {
     try {
-      final XFile? pickedImage = await ImagePicker().pickImage(
+      final XFile? pickedImage = await _picker.pickImage(
         source: ImageSource.camera,
         maxHeight: 300,
         maxWidth: 300,
@@ -46,7 +47,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
 
   void _pickImageFromGallery() async {
     try {
-      final XFile? pickedImage = await ImagePicker().pickImage(
+      final XFile? pickedImage = await _picker.pickImage(
         source: ImageSource.gallery,
         maxHeight: 300,
         maxWidth: 300,
