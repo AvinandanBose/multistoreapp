@@ -1152,9 +1152,9 @@ auth/customer_signIn
 </h3>
 
 </ul>
-<h3>  <li> 5. Viewing the Image from Gallery/Camera  .</li></h3>
+<h3>  <li> 5. Viewing the Selected Image from Gallery/Camera  .</li></h3>
 <ul>
-<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master102"> Viewing the Image from Gallery/Camera→ Final   </a></li></h3>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master102"> Viewing the Selected Image from Gallery/Camera→ Final   </a></li></h3>
  
  <h3>
 
