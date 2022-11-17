@@ -37,7 +37,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
       });
     } on FileSystemException catch (e) {
       setState(() {
-        _pickedImageError  = e;
+        _pickedImageError = e;
       });
 
       print(_pickedImageError);
@@ -59,7 +59,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
       });
     } on FileSystemException catch (e) {
       setState(() {
-        _pickedImageError  = e;
+        _pickedImageError = e;
       });
 
       print(_pickedImageError);
@@ -92,12 +92,17 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                     ),
                     Row(
                       children: <Widget>[
-                        const Padding(
-                          padding: EdgeInsets.symmetric(
+                        Padding(
+                          padding: const EdgeInsets.symmetric(
                               horizontal: 40.0, vertical: 20),
                           child: CircleAvatar(
                             radius: 60,
                             backgroundColor: Colors.purpleAccent,
+                            backgroundImage: _imageFile == null
+                                ? null
+                                : FileImage(
+                                    File(_imageFile!.path),
+                                  ),
                           ),
                         ),
                         Column(
