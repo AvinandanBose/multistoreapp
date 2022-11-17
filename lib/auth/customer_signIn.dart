@@ -250,9 +250,18 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                     AuthMainButton(
                       onPressed: () {
                         if (formKeyForValidation.currentState!.validate()) {
-                          print(name);
-                          print(email);
-                          print(password);
+                          if (_imageFile != null) {
+                            print('valid');
+                            print('image picked');
+                            print(name);
+                            print(email);
+                            print(password);
+                          } else {
+                            MyMessageHandler.showSnackBar(
+                                message: 'Upload Image',
+                                key: _scaffoldKey); //→ Call To Function
+
+                          }
                         } else {
                           MyMessageHandler.showSnackBar(
                               message: 'Please Fill All Fields',
