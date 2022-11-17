@@ -1164,6 +1164,18 @@ auth/customer_signIn
  
 ```
 </ul>
+<h3>  <li> 6. Showing Message If Image Not Selected  .</li></h3>
+ <ul>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master103"> Showing Message If Image Not Selected→ Final   </a></li></h3>
+ 
+ <h3>
+
+```Syntax
+
+auth/customer_signIn
+ 
+```
+</ul>
  
 </ul>
 
