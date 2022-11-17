@@ -1135,6 +1135,21 @@ auth/customer_signIn
 
 </h3>
 
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master101">Accessing Image From Gallery[Creating an Object of ImagePicker Class]→ Final   </a></li></h3>
+ 
+ <h3>
+
+```Syntax
+
+auth/customer_signIn
+ 
+```
+
+</h3>
+
+
+
+
  </ul>
  </ul>
  </ul>
