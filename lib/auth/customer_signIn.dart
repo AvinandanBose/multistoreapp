@@ -256,11 +256,14 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                             print(name);
                             print(email);
                             print(password);
+                            formKeyForValidation.currentState!.reset();
+                            setState(() {
+                              _imageFile = null;
+                            });
                           } else {
                             MyMessageHandler.showSnackBar(
                                 message: 'Upload Image',
                                 key: _scaffoldKey); //→ Call To Function
-
                           }
                         } else {
                           MyMessageHandler.showSnackBar(
