@@ -44,6 +44,28 @@ class _CustomerRegisterState extends State<CustomerRegister> {
     }
   }
 
+  void _pickImageFromGallery() async {
+    try {
+      final XFile? pickedImage = await ImagePicker().pickImage(
+        source: ImageSource.gallery,
+        maxHeight: 300,
+        maxWidth: 300,
+        imageQuality: 95,
+      );
+
+      setState(() {
+        _imageFile = pickedImage;
+      });
+    } on FileSystemException catch (e) {
+      setState(() {
+        _pickedImageError  = e;
+      });
+
+      print(_pickedImageError);
+      print(e.message);
+    }
+  }
+
   final GlobalKey<FormState> formKeyForValidation = GlobalKey<FormState>();
   final GlobalKey<ScaffoldMessengerState> _scaffoldKey =
       GlobalKey<ScaffoldMessengerState>(); //→ Key
@@ -109,7 +131,9 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                                 ),
                               ),
                               child: IconButton(
-                                onPressed: () {},
+                                onPressed: () {
+                                  _pickImageFromGallery();
+                                },
                                 icon: const Icon(
                                   Icons.camera_alt,
                                   color: Colors.white,
