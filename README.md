@@ -995,9 +995,10 @@ auth/customer_signIn
 </h3>
 
   </ul>
+  </ul>
 <h3> <i>Note : Try to keep Variables as Private , in Dart Starting with '_' (Underscore ) means Private. [Data Hiding Concept of OOP] </i></h3>
 
-<h3><li> 3. SnackBar Class( Messenger of Scaffold) </li></h3>
+<h3><li> 7. SnackBar Class( Messenger of Scaffold) </li></h3>
 <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master92">SnackBar → a   </a></li></h3>
 
@@ -1076,13 +1077,13 @@ Widget Call: auth/customer_signIn
 
 </h3>
 </ul>
- <h3><li> 3. Image Picker [Dependency Package]</li></h3>
+ <h3><li> 8. Image Picker [Dependency Package]</li></h3>
  <ul>
- <h3>  <li> 1st Include In Pubspec.yml file of the Project.</li></h3>
+ <h3>  <li> 1. Include In Pubspec.yml file of the Project.</li></h3>
  
  ![Screenshot (126)](https://user-images.githubusercontent.com/38869235/202214789-845b2724-7223-41c7-b5d0-7508ee4fb0fa.png)
  
-  <h3>  <li> 2nd Give Access To The Device .</li></h3>
+  <h3>  <li> 2. Give Access To The Device .</li></h3>
   <ul>
 <h3><li> Make → android:requestLegacyExternalStorage="true"  in AndroidManifest.xml (Dir: app/src/main/AndroidManifest.xml) . </li></h3>
 
@@ -1092,7 +1093,10 @@ Widget Call: auth/customer_signIn
  <ul>
   
  </ul>
- <h3>  <li> 1. Accessing Image From Camera .</li></h3>
+ 
+ </ul>
+ 
+ <h3>  <li> 3. Accessing Image From Camera .</li></h3>
  <ul>
  <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master98">Accessing Image From Camera→ a    </a></li></h3>
  
@@ -1121,7 +1125,7 @@ auth/customer_signIn
 </h3>
  
  </ul>
- <h3>  <li> 2. Accessing Image From Gallery .</li></h3>
+ <h3>  <li> 4. Accessing Image From Gallery .</li></h3>
  <ul>
  <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master100">Accessing Image From Gallery→ A   </a></li></h3>
  
@@ -1146,13 +1150,8 @@ auth/customer_signIn
 ```
 
 </h3>
-
-
-
-
- </ul>
- </ul>
- </ul>
+</ul>
+ 
 </ul>
 
  </ul>
