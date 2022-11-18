@@ -1232,11 +1232,13 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
 <h3> <li> 9. Create Firebase Project </li></h3>
 <ul>
 <h3><li><a href = "https://github.com/AvinandanBose/FireBase_Flutter_Complete/tree/starting_branch"> 1.Creation of Firebase A/C and Linking with Flutter </a></li></h3>
+ <h3><li>2. Error Fixing</li> </h3>
+ <ul>
+ <h3><li><a href = "https://github.com/AvinandanBose/FireBase_Flutter_Complete/tree/Error_fixing"> 2.a. Error Fixing: MultiDex Issue and MinSDK </a></li></h3>
  
- <h3><li><a href = "https://github.com/AvinandanBose/FireBase_Flutter_Complete/tree/Error_fixing"> 2.Error Fixing: MultiDex Issue and MinSDK </a></li></h3>
- 
- <h3> OR </h3>
- 
+ <h3> OR [Only for MinSDK Problem]</h3>
+ <h3><li><a href = "https://github.com/AvinandanBose/FireBase_Flutter_Complete/tree/main/FixingMinSDKProb"> 2.b. Error Fixing:  Only For MinSDK Problem</a></li></h3>
+  </ul>
  
 </ul>
 </ul>
