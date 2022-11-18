@@ -1274,8 +1274,15 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
  <h3><li>Firebase Core→A Flutter plugin to use the Firebase Core API, which enables connecting to multiple Firebase apps.</li></h3>
  
  <h3><a href = 'https://pub.dev/packages/firebase_core'> Link For Firebase Core Package </a> </h3>
+ <h3> In pubspec.yaml install the dependencies: </h3>
  
+ ![Screenshot (139)](https://user-images.githubusercontent.com/38869235/202710748-9f3d03a4-1de9-4864-8d98-36cd3c5035cb.png)
+
  
+ </ul>
+ <h3><li>5. Initialization of Firebase in Project  </li> </h3>
+ <ul>
+ <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master105"> Initialization of Firebase in Project → Final   </a></li></h3>
  </ul>
 </ul>
 </ul>
