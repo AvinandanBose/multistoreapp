@@ -1239,7 +1239,10 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
  <h3> OR [Only for MinSDK Problem]</h3>
  <h3><li><a href = "https://github.com/AvinandanBose/FireBase_Flutter_Complete/tree/main/FixingMinSDKProb"> 2.b. Error Fixing:  Only For MinSDK Problem</a></li></h3>
   </ul>
- 
+ <h3><li>3. Adding SHA certificate to Project Setting</li> </h3>
+ <ul>
+ <h3><li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/FribaseFirestore"> Adding SHA certificate to Project Setting</a></li></h3>
+ </ul>
 </ul>
 </ul>
 
