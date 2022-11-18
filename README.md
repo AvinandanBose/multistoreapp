@@ -1235,6 +1235,8 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
  
  <h3><li><a href = "https://github.com/AvinandanBose/FireBase_Flutter_Complete/tree/Error_fixing"> 2.Error Fixing: MultiDex Issue and MinSDK </a></li></h3>
  
+ <h3> OR </h3>
+ 
  
 </ul>
 </ul>
