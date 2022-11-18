@@ -1242,6 +1242,18 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
  <h3><li>3. Adding SHA certificate to Project Setting</li> </h3>
  <ul>
  <h3><li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/FribaseFirestore"> Adding SHA certificate to Project Setting</a></li></h3>
+ <h3> Note :</h3>
+ 
+ <h3>
+ 
+ ```Syntax
+ It is necessary for Firebase to authenticate Client while storing Data either 
+ in Firestore Database or Firebase Storage.Such Client Authentication done with 
+ storing the SHA Key which get matched  between Server & Client ,during the process
+ of storing the data. 
+```
+</h3>
+ 
  </ul>
 </ul>
 </ul>
