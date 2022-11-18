@@ -1361,7 +1361,8 @@ main_screen\welcome_screen
 ```
 </h3>
 
-<h3><li>6. Log In Anonymously using Conditional Operator.  </li> </h3>
+</ul>
+ <h3><li>7. Log In Anonymously using Conditional Operator.  </li> </h3>
 <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master108"> Log In Anonymously using Conditional Operator  </a></li></h3>
 
