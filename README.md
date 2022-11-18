@@ -1230,5 +1230,8 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
  
 </ul>
 <h3> <li> 9. Create Firebase Project </li></h3>
- </ul>
+<ul>
+<h3><li><a href = "https://github.com/AvinandanBose/FireBase_Flutter_Complete/tree/starting_branch"> 1.Creation of Firebase A/C and Linking with Flutter </a></li></h3>
+</ul>
+</ul>
 
