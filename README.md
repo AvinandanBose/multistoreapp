@@ -1247,10 +1247,12 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
  <h3>
  
  ```Syntax
- It is necessary for Firebase to authenticate Client while storing Data either 
- in Firestore Database or Firebase Storage.Such Client Authentication done with 
- storing the SHA Key which get matched  between Server & Client ,during the process
- of storing the data. 
+ It is necessary for Firebase to authenticate Client 
+ while storing Data either in Firestore Database or 
+ Firebase Storage.Such Client Authentication done with 
+ storing the SHA Key which get matched 
+ between Server & Client ,during the process of 
+ storing the data. 
 ```
 </h3>
  
