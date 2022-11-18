@@ -246,9 +246,9 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                           image: AssetImage('images/inapp/facebook.jpg'),
                         ),
                       ),
-                      if (processing == true) ...{
+                      if (processing == true)
                         const CircularProgressIndicator()
-                      } else ...{
+                       else
                         GoogleFacebookLogin(
                           onPressed: () async {
                             setState(() {
@@ -265,7 +265,6 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                             color: Colors.lightBlueAccent,
                           ),
                         ),
-                      }
                     ],
                   ),
                 ),
