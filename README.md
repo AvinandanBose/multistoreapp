@@ -1317,5 +1317,65 @@ Firebase.initializeApp() → Help to Initilize the App.
 ```
  </ul>
 </ul>
+<h3><li>10. LogIn Anonymously</li> </h3>
+<ul>
+<h3><li>1. Go To Console  </li> </h3>
+<h3><li>2. Go To Build → Authentication  </li> </h3>
+
+![Screenshot (144)](https://user-images.githubusercontent.com/38869235/202762890-4e5f9966-2555-4ce5-9f2f-b9e6cca00271.png)
+
+<h3><li>3. Tap on Anonymous .  </li> </h3>
+
+![Screenshot (142)](https://user-images.githubusercontent.com/38869235/202763097-7db35a5a-6af2-450e-9b3c-c2ab080e9388.png)
+
+<h3><li>4. Turn on Anonymous and Save .  </li> </h3>
+
+![Screenshot (143)](https://user-images.githubusercontent.com/38869235/202763333-60b95607-07a0-4377-a189-33da57158eb0.png)
+
+<h3><li>5. Log In Anonymously using If..{} else...{} Statement .  </li> </h3>
+<ul>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master106"> Log In Anonymously using If..{} else...{} Statement   </a></li></h3>
+
+<h3>
+   
+```Syntax
+
+main_screen\welcome_screen
+ 
+```
+</h3>
+<h3><i> <ins> Note </ins> : ... [triple dot] is called <ins>Spread Operator</ins> , a concise way to insert multiple elements into a collection. Note here we can also use if...[ ] else...[ ] that will take all the collection and add into the list.</i></h3>
+
+</ul>
+
+<h3><li>6. Log In Anonymously using If else Statement Type2.  </li> </h3>
+<ul>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master107"> Log In Anonymously using If else Statement(2)  </a></li></h3>
+
+<h3>
+   
+```Syntax
+
+main_screen\welcome_screen
+ 
+```
+</h3>
+
+<h3><li>6. Log In Anonymously using Conditional Operator.  </li> </h3>
+<ul>
+<h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master108"> Log In Anonymously using Conditional Operator  </a></li></h3>
+
+<h3>
+   
+```Syntax
+
+main_screen\welcome_screen
+ 
+```
+<h3><i> <ins> Note </ins> : Conditional Operator is the most accepted , since it reduces the lines of code and its simplicity.</i></h3>
+</h3>
+
+</ul>
+</ul>
 </ul>
 
