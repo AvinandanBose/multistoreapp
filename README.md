@@ -1257,6 +1257,26 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
 </h3>
  
  </ul>
+ <h3><li>4. Installing Packages to use FireBase </li> </h3>
+ <ul>
+ <h3><li>FireBaseAuth → A Flutter plugin to use the Firebase Authentication API.</li></h3>
+ <h3><i><ins>Note</ins>: Firebase Authentication  aims to make building secure authentication systems easy, while improving the sign-in and onboarding experience for end users. It provides an end-to-end identity solution, supporting email and password accounts, phone auth, and Google, Twitter, Facebook, and GitHub login, and more. </i></h3>
+ <h3><a href = 'https://pub.dev/packages/firebase_auth'> Link For FireBase Auth Package </a> </h3>
+ 
+ <h3><li>Cloud Firestore  →A Flutter plugin to use the Cloud Firestore API.</li></h3>
+ <h3><i><ins>Note</ins>: Cloud Firestore is a flexible, scalable database for mobile, web, and server development from Firebase and Google Cloud. Like Firebase Realtime Database, it keeps your data in sync across client apps through realtime listeners and offers offline support for mobile and web so you can build responsive apps that work regardless of network latency or Internet connectivity. Cloud Firestore also offers seamless integration with other Firebase and Google Cloud products, including Cloud Functions. </i></h3>
+ <h3><a href = 'https://pub.dev/packages/cloud_firestore'> Link For Cloud FireStore Package </a> </h3>
+ 
+ <h3><li>Firebase Storage(Cloud Storage for Flutter) →A Flutter plugin to use the Firebase Cloud Storage API.</li></h3>
+ <h3><i><ins>Note</ins>: Cloud Storage for Firebase is built for app developers who need to store and serve user-generated content, such as photos or videos. It helps to upload and download user-generated content through generating a link regarding the file . Some benefits of using Firebase Storage are : 1) Uploads and Downloads can takes place, regardless of network quality, 2) Strong Security and 3) High Scalability .  </i></h3>
+ <h3><a href = 'https://pub.dev/packages/firebase_storage'> Link For Cloud FirebaseStorage Package </a> </h3>
+ 
+ <h3><li>Firebase Core→A Flutter plugin to use the Firebase Core API, which enables connecting to multiple Firebase apps.</li></h3>
+ 
+ <h3><a href = 'https://pub.dev/packages/firebase_core'> Link For Firebase Core Package </a> </h3>
+ 
+ 
+ </ul>
 </ul>
 </ul>
 
