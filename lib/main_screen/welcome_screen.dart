@@ -246,25 +246,24 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                           image: AssetImage('images/inapp/facebook.jpg'),
                         ),
                       ),
-                      if (processing == true)
-                        const CircularProgressIndicator()
-                       else
-                        GoogleFacebookLogin(
-                          onPressed: () async {
-                            setState(() {
-                              processing = true;
-                            });
-                            await FirebaseAuth.instance.signInAnonymously();
-                            Navigator.pushReplacementNamed(
-                                context, 'customer_home');
-                          },
-                          label: 'Guest',
-                          child: const Icon(
-                            Icons.person,
-                            size: 55,
-                            color: Colors.lightBlueAccent,
-                          ),
-                        ),
+                      processing == true
+                          ? const CircularProgressIndicator()
+                          : GoogleFacebookLogin(
+                              onPressed: () async {
+                                setState(() {
+                                  processing = true;
+                                });
+                                await FirebaseAuth.instance.signInAnonymously();
+                                Navigator.pushReplacementNamed(
+                                    context, 'customer_home');
+                              },
+                              label: 'Guest',
+                              child: const Icon(
+                                Icons.person,
+                                size: 55,
+                                color: Colors.lightBlueAccent,
+                              ),
+                            ),
                     ],
                   ),
                 ),
