@@ -1283,6 +1283,29 @@ Note: Starting ,XFile? image = XFile(''); Will cause error as the path is blank.
  <h3><li>5. Initialization of Firebase in Project  </li> </h3>
  <ul>
  <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master105"> Initialization of Firebase in Project → Final   </a></li></h3>
+  
+<h3>
+   
+```Syntax
+
+main
+ 
+```
+</h3>
+
+<h3> <ins>Note </ins> </h3>
+  
+```Syntax
+
+Note: WidgetsFlutterBinding → A concrete binding for applications based on the Widgets framework.
+WidgetsFlutterBinding.ensureInitialized() →  Returns an instance of the binding that implements WidgetsBinding. 
+If no binding has yet been initialized, the WidgetsFlutterBinding class is used to create and initialize one.
+ 
+As we are initilizing Firebase with Main() function , Response may come late i.e. asynchronous.
+Hence, Main() function becomes async and it awaits for an instance of Firebase and 
+Firebase.initializeApp() → Initilize the App
+  
+```
  </ul>
 </ul>
 </ul>
