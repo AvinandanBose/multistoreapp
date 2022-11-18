@@ -1297,12 +1297,21 @@ main
   
 ```Syntax
 
-Note: WidgetsFlutterBinding → A concrete binding for applications based on the Widgets framework.
-WidgetsFlutterBinding.ensureInitialized() →  Returns an instance of the binding that implements WidgetsBinding. 
-If no binding has yet been initialized, the WidgetsFlutterBinding class is used to create and initialize one.
+Note: WidgetsFlutterBinding → A concrete binding for applications based 
+on the Widgets framework.
+
+WidgetsFlutterBinding.ensureInitialized() →  Returns an instance of the 
+binding that implements WidgetsBinding. 
+
+If no binding has yet been initialized, the WidgetsFlutterBinding class 
+is used to create and initialize one.
  
-As we are initilizing Firebase with Main() function , Response may come late i.e. asynchronous.
-Hence, Main() function becomes async and it awaits for an instance of Firebase and 
+As we are initilizing Firebase with Main() function , 
+Response may come late i.e. asynchronous.
+
+Hence, Main() function becomes async and it awaits for an 
+instance of Firebase and 
+
 Firebase.initializeApp() → Help to Initilize the App.
   
 ```
