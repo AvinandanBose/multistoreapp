@@ -1,3 +1,4 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:multistoreapp/customer_screens/customer_orders.dart';
 import 'package:multistoreapp/customer_screens/wishlist.dart';
@@ -290,7 +291,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                                     child: const Text('No'),
                                                   ),
                                                   ElevatedButton(
-                                                    onPressed: () {
+                                                    onPressed: () async {
+                                                      await FirebaseAuth.instance.signOut();
                                                       Navigator
                                                           .pushReplacementNamed(
                                                               context,
