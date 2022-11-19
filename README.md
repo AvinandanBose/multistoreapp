@@ -1344,7 +1344,7 @@ main_screen\welcome_screen
  
 ```
 </h3>
-<h3><i> <ins> Note </ins> : ... [triple dot] is called <ins>Spread Operator</ins> , a concise way to insert multiple elements into a collection. Note here we can also use if...[ ] else...[ ] that will take all the collection and add into the list.</i></h3>
+<h3><i> <ins> Note </ins> : ... [triple dot] is called <ins>Spread Operator</ins> , a concise way to insert multiple elements into a collection. Note here we can also use if...[ ] else...[ ] that will take all the collection and add into the list while if...{} else...{} to a map.</i></h3>
 
 </ul>
 
@@ -1429,7 +1429,7 @@ main_screen\profile
  
 ```
 </h3>
-
+<h3><i> <ins> Note </ins> : In Logout before pushing to other page , it is necessary to get sign out from firebase instance created during signin . </i></h3>
  </ul>
 </ul>
 </ul>
