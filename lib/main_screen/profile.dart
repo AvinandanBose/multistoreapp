@@ -1,10 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:multistoreapp/customer_screens/customer_orders.dart';
 import 'package:multistoreapp/customer_screens/wishlist.dart';
 import 'package:multistoreapp/main_screen/cart.dart';
 import 'package:multistoreapp/widgets/appbar_widgets.dart';
+import 'package:multistoreapp/widgets/alert_dialog.dart';
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({Key? key}) : super(key: key);
@@ -287,53 +287,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
   }
 }
 
-class MyAlertDialogue {
-  static showMyDialogue({
-    required BuildContext context,
-    required String dgTitle,
-    required String dgContent,
-    required Function tabNo,
-    required Function tabYes,
-  }) {
-    showCupertinoDialog(
-      context: context,
-      builder: (BuildContext context) => CupertinoAlertDialog(
-        title: Center(
-          child: Text(
-            dgTitle,
-            style: const TextStyle(
-              fontWeight: FontWeight.bold,
-              fontSize: 18,
-              color: Colors.purpleAccent,
-            ),
-          ),
-        ),
-        content: Text(
-          dgContent,
-          style: const TextStyle(
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-            color: Colors.black87,
-          ),
-        ),
-        actions: <CupertinoDialogAction>[
-          CupertinoDialogAction(
-            onPressed: () {
-              tabNo();
-            },
-            child: const Text('No'),
-          ),
-          CupertinoDialogAction(
-            onPressed: () {
-              tabYes();
-            },
-            child: const Text('Yes'),
-          ),
-        ],
-      ),
-    );
-  }
-}
+
 
 class YellowDivider extends StatelessWidget {
   const YellowDivider({
