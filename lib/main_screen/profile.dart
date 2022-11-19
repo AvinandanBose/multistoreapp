@@ -249,62 +249,21 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       title: 'Log Out',
                                       icon: Icons.logout,
                                       onPressed: () {
-                                        showDialog(
+                                        MyAlertDialogue.showMyDialogue(
                                           context: context,
-                                          builder: (BuildContext context) =>
-                                              AlertDialog(
-                                            backgroundColor:
-                                                Colors.yellowAccent,
-                                            title: const Center(
-                                              child: Text(
-                                                'Log Out?',
-                                                style: TextStyle(
-                                                  fontWeight: FontWeight.bold,
-                                                  fontSize: 18,
-                                                  color: Colors.purpleAccent,
-                                                ),
-                                              ),
-                                            ),
-                                            content: const Text(
-                                              'Do you want to logout?',
-                                              style: TextStyle(
-                                                fontWeight: FontWeight.bold,
-                                                fontSize: 18,
-                                                color: Colors.black87,
-                                              ),
-                                            ),
-                                            actions: <Widget>[
-                                              const Divider(
-                                                color: Colors.black,
-                                                indent: 30,
-                                                endIndent: 30,
-                                              ),
-                                              Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment
-                                                        .spaceBetween,
-                                                children: <Widget>[
-                                                  ElevatedButton(
-                                                    onPressed: () {
-                                                      Navigator.pop(context);
-                                                    },
-                                                    child: const Text('No'),
-                                                  ),
-                                                  ElevatedButton(
-                                                    onPressed: () async {
-                                                      await FirebaseAuth.instance.signOut();
-                                                      Navigator.pop(context);//Removes the back button
-                                                      Navigator
-                                                          .pushReplacementNamed(
-                                                              context,
-                                                              'welcome_screen');
-                                                    },
-                                                    child: const Text('Yes'),
-                                                  ),
-                                                ],
-                                              ),
-                                            ],
-                                          ),
+                                          dgTitle: 'LogOut?',
+                                          dgContent: 'Do you want to log out?',
+                                          tabNo: () {
+                                            Navigator.pop(context);
+                                          },
+                                          tabYes: () async {
+                                            await FirebaseAuth.instance
+                                                .signOut();
+                                            Navigator.pop(
+                                                context); //Removes the back button
+                                            Navigator.pushReplacementNamed(
+                                                context, 'welcome_screen');
+                                          },
                                         );
                                       },
                                     ),
@@ -318,6 +277,60 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     ),
                   ],
                 ),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class MyAlertDialogue {
+  static showMyDialogue({
+    required BuildContext context,
+    required String dgTitle,
+    required String dgContent,
+    required Function tabNo,
+    required Function tabYes,
+  }) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) => AlertDialog(
+        backgroundColor: Colors.yellowAccent,
+        title: Center(
+          child: Text(
+            dgTitle,
+            style: const TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+              color: Colors.purpleAccent,
+            ),
+          ),
+        ),
+        content: Text(
+          dgContent,
+          style: const TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+            color: Colors.black87,
+          ),
+        ),
+        actions: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: <Widget>[
+              ElevatedButton(
+                onPressed: () {
+                  tabNo();
+                },
+                child: const Text('No'),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  tabYes();
+                },
+                child: const Text('Yes'),
               ),
             ],
           ),
