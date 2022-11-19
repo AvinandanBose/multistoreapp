@@ -248,8 +248,61 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                       title: 'Log Out',
                                       icon: Icons.logout,
                                       onPressed: () {
-                                        Navigator.pushReplacementNamed(
-                                            context, 'welcome_screen');
+                                        showDialog(
+                                          context: context,
+                                          builder: (BuildContext context) =>
+                                              AlertDialog(
+                                            backgroundColor:
+                                                Colors.yellowAccent,
+                                            title: const Center(
+                                              child: Text(
+                                                'Log Out?',
+                                                style: TextStyle(
+                                                  fontWeight: FontWeight.bold,
+                                                  fontSize: 18,
+                                                  color: Colors.purpleAccent,
+                                                ),
+                                              ),
+                                            ),
+                                            content: const Text(
+                                              'Do you want to logout?',
+                                              style: TextStyle(
+                                                fontWeight: FontWeight.bold,
+                                                fontSize: 18,
+                                                color: Colors.black87,
+                                              ),
+                                            ),
+                                            actions: <Widget>[
+                                              const Divider(
+                                                color: Colors.black,
+                                                indent: 30,
+                                                endIndent: 30,
+                                              ),
+                                              Row(
+                                                mainAxisAlignment:
+                                                    MainAxisAlignment
+                                                        .spaceBetween,
+                                                children: <Widget>[
+                                                  ElevatedButton(
+                                                    onPressed: () {
+                                                      Navigator.pop(context);
+                                                    },
+                                                    child: const Text('No'),
+                                                  ),
+                                                  ElevatedButton(
+                                                    onPressed: () {
+                                                      Navigator
+                                                          .pushReplacementNamed(
+                                                              context,
+                                                              'welcome_screen');
+                                                    },
+                                                    child: const Text('Yes'),
+                                                  ),
+                                                ],
+                                              ),
+                                            ],
+                                          ),
+                                        );
                                       },
                                     ),
                                   ],
