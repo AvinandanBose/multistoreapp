@@ -1415,9 +1415,22 @@ main_screen\profile
  
 ```
 </h3>
-  
+ 
 </ul>
+ <h3><li>2. Log Out using Cupertino Alert Dialog and ShowCupertinoDialog</li></h3>
+ <ul>
+ <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master112"> Log Out using Cupertino Alert Dialog and ShowCupertinoDialog[Refactored][Final]</a></li></h3>
+ 
+ <h3>
 
+```Syntax
+
+main_screen\profile
+ 
+```
+</h3>
+
+ </ul>
 </ul>
 </ul>
 
