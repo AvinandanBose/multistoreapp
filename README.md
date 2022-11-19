@@ -1380,6 +1380,9 @@ main_screen\welcome_screen
 </ul>
 </ul>
 <h3><li>11. Log Out with Alert Dialogue</li> </h3>
+<h3>  <a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master23"> An Use Case of Alert and ShowDialog  </a></h3>
+
+<h3>  <a href = "https://github.com/AvinandanBose/usageoflistviewbuilder/tree/master24"> An Use Case of CupertinoAlert and ShowCupertinoDialog  </a></h3>
 <ul>
 <h3><li>1. Log Out with Alert Dialog and ShowDialog</li></h3>
 <ul>
