@@ -293,6 +293,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                                                   ElevatedButton(
                                                     onPressed: () async {
                                                       await FirebaseAuth.instance.signOut();
+                                                      Navigator.pop(context);//Removes the back button
                                                       Navigator
                                                           .pushReplacementNamed(
                                                               context,
