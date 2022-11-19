@@ -1395,6 +1395,16 @@ main_screen\profile
 </h3>
 
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master110"> Log Out using Alert Dialog and ShowDialog-2[Solving Back Button Problem]  </a></li></h3>
+
+<h3>
+
+```Syntax
+
+main_screen\profile
+ 
+```
+</h3>
+
 </ul>
 
 </ul>
