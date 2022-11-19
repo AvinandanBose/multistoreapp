@@ -1379,9 +1379,9 @@ main_screen\welcome_screen
 
 </ul>
 </ul>
-<h3><li>11. Log Out using Alert Dialogue</li> </h3>
+<h3><li>11. Log Out with Alert Dialogue</li> </h3>
 <ul>
-<h3><li>1. Log Out using Alert Dialog and ShowDialog</li></h3>
+<h3><li>1. Log Out with Alert Dialog and ShowDialog</li></h3>
 <ul>
 <h3>  <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master109"> Log Out using Alert Dialog and ShowDialog-1  </a></li></h3>
 
@@ -1429,8 +1429,9 @@ main_screen\profile
  
 ```
 </h3>
-<h3><i> <ins> Note </ins> : In Logout before pushing to other page , it is necessary to get sign out from firebase instance created during signin . </i></h3>
+
  </ul>
+ <h3><i> <ins> Note </ins> : In Logout before pushing to other page , it is necessary to get sign out from firebase instance created during signin . </i></h3>
 </ul>
 </ul>
 
