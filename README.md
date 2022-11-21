@@ -1460,7 +1460,10 @@ Widget Call: main_screen\profile
   
   ![Screenshot (154)](https://user-images.githubusercontent.com/38869235/203103608-ed355318-3d1c-4c16-ba64-bec29e2cf858.png)
 
-  
+  <h3><li> 5. Now we have both active 1) Anynomous Sign In and 2) Email and Password SignIn.  </li></h3>
+   
+   ![Screenshot (155)](https://user-images.githubusercontent.com/38869235/203104326-ae8832a3-5d66-4b32-a921-c8d07e56e4d1.png)
+
   </ul>
 </ul>
 
