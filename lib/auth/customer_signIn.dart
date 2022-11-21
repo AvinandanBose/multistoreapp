@@ -1,11 +1,8 @@
 import 'dart:io';
-
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-
 import 'package:multistoreapp/widgets/auth_widgets.dart';
-
 import 'package:multistoreapp/widgets/snackbar.dart';
-
 import 'package:image_picker/image_picker.dart';
 
 class CustomerRegister extends StatefulWidget {
@@ -64,6 +61,45 @@ class _CustomerRegisterState extends State<CustomerRegister> {
 
       print(_pickedImageError);
       print(e.message);
+    }
+  }
+
+  Future<void> SignUp() async {
+    if (formKeyForValidation.currentState!.validate()) {
+      if (_imageFile != null) {
+        try {
+          await FirebaseAuth.instance
+              .createUserWithEmailAndPassword(email: email, password: password);
+          formKeyForValidation.currentState!.reset();
+          setState(() {
+            _imageFile = null;
+          });
+          Navigator.pushReplacementNamed(context, 'customer_home');
+        } on FirebaseAuthException catch (e) {
+          if (e.code == 'weak-password') {
+            MyMessageHandler.showSnackBar(
+                message: 'The password provided is too weak.',
+                key: _scaffoldKey); //→ Call To Function
+          } else if (e.code == 'email-already-in-use') {
+            MyMessageHandler.showSnackBar(
+                message: 'The account already exists for that email',
+                key: _scaffoldKey);
+          }
+        }
+        await FirebaseAuth.instance
+            .createUserWithEmailAndPassword(email: email, password: password);
+        formKeyForValidation.currentState!.reset();
+        setState(() {
+          _imageFile = null;
+        });
+      } else {
+        MyMessageHandler.showSnackBar(
+            message: 'Upload Image', key: _scaffoldKey); //→ Call To Function
+      }
+    } else {
+      MyMessageHandler.showSnackBar(
+          message: 'Please Fill All Fields',
+          key: _scaffoldKey); //→ Call To Function
     }
   }
 
@@ -248,28 +284,9 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                       onpressed: () {},
                     ),
                     AuthMainButton(
-                      onPressed: () {
-                        if (formKeyForValidation.currentState!.validate()) {
-                          if (_imageFile != null) {
-                            print('valid');
-                            print('image picked');
-                            print(name);
-                            print(email);
-                            print(password);
-                            formKeyForValidation.currentState!.reset();
-                            setState(() {
-                              _imageFile = null;
-                            });
-                          } else {
-                            MyMessageHandler.showSnackBar(
-                                message: 'Upload Image',
-                                key: _scaffoldKey); //→ Call To Function
-                          }
-                        } else {
-                          MyMessageHandler.showSnackBar(
-                              message: 'Please Fill All Fields',
-                              key: _scaffoldKey); //→ Call To Function
-                        }
+                      onPressed: ()async {
+                        await SignUp();
+
                       },
                       mainButtonLabel: 'Sign Up',
                     )
