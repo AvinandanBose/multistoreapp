@@ -1449,5 +1449,19 @@ Widget Call: main_screen\profile
  <h3><i> <ins> Note </ins> : In Logout before pushing to other page , it is necessary to get sign out from firebase instance created during signin . </i></h3>
 </ul>
   <h3><li>12.SignUp </li> </h3>
+  <ul>
+  <h3><li> 1. Go to Firebase Console </li></h3>
+  <h3><li> 2. Then Go to Authentication  </li></h3>
+  <h3><li> 3. Then Go to SignIn Methods.  </li></h3>
+  
+  ![Screenshot (153)](https://user-images.githubusercontent.com/38869235/203103193-7b15385e-3b02-4781-a685-f73b2a40c9ce.png)
+  
+  <h3><li> 4. Then Go to Email and Password Section and Turn it on and save.  </li></h3>
+  
+  ![Screenshot (154)](https://user-images.githubusercontent.com/38869235/203103608-ed355318-3d1c-4c16-ba64-bec29e2cf858.png)
+
+  
+  </ul>
 </ul>
+
 
