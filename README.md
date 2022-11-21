@@ -1448,5 +1448,6 @@ Widget Call: main_screen\profile
  </ul>
  <h3><i> <ins> Note </ins> : In Logout before pushing to other page , it is necessary to get sign out from firebase instance created during signin . </i></h3>
 </ul>
+  <h3><li>12.SignUp </li> </h3>
 </ul>
 
