@@ -1463,6 +1463,21 @@ Widget Call: main_screen\profile
   <h3><li> 5. Now we have both active 1) Anynomous Sign In and 2) Email and Password SignIn.  </li></h3>
    
    ![Screenshot (155)](https://user-images.githubusercontent.com/38869235/203104326-ae8832a3-5d66-4b32-a921-c8d07e56e4d1.png)
+   
+   <h3><li> 6.SignUp .  </li></h3>
+   <ul>
+   <h3><li> <a href= 'https://github.com/AvinandanBose/multistoreapp/tree/master114'>SignUp [FInal] </a> </li></h3>
+   
+<h3>
+
+```Syntax
+
+auth\customer_signIn
+ 
+```
+</h3>
+
+   <ul>
 
   </ul>
 </ul>
