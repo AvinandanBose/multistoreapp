@@ -1,9 +1,11 @@
 import 'dart:io';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:multistoreapp/widgets/auth_widgets.dart';
 import 'package:multistoreapp/widgets/snackbar.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
 class CustomerRegister extends StatefulWidget {
   const CustomerRegister({Key? key}) : super(key: key);
@@ -16,10 +18,16 @@ class _CustomerRegisterState extends State<CustomerRegister> {
   late String name;
   late String email;
   late String password;
+  late String profileImage;
+  late String _uid;
+
+  CollectionReference customers =
+      FirebaseFirestore.instance.collection('customers');
 
   final ImagePicker _picker = ImagePicker();
   XFile? _imageFile;
   late FileSystemException _pickedImageError;
+
   void _pickImageFromCamera() async {
     try {
       final XFile? pickedImage = await _picker.pickImage(
@@ -70,11 +78,35 @@ class _CustomerRegisterState extends State<CustomerRegister> {
         try {
           await FirebaseAuth.instance
               .createUserWithEmailAndPassword(email: email, password: password);
+
+//UploadingCustomerInfo
+          firebase_storage.Reference reference = firebase_storage
+              .FirebaseStorage.instance
+              .ref('cust-images/$email.jpg');
+
+          await reference.putFile(File(_imageFile!.path));
+
+          profileImage = await reference.getDownloadURL();
+          _uid = FirebaseAuth.instance.currentUser!.uid;
+
+          await customers.doc(_uid).set({
+            'name': name,
+            'email': email,
+            'profileimage': profileImage,
+            'phone': '',
+            'address': '',
+            'cid': _uid,
+          });
+//UploadingCustomerInfo
+
+//Reset
           formKeyForValidation.currentState!.reset();
           setState(() {
             _imageFile = null;
           });
-          Navigator.pushReplacementNamed(context, 'customer_home');
+          //Reset
+
+          Navigator.pushReplacementNamed(context, 'customer_home'); //PUSH
         } on FirebaseAuthException catch (e) {
           if (e.code == 'weak-password') {
             MyMessageHandler.showSnackBar(
@@ -284,9 +316,8 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                       onpressed: () {},
                     ),
                     AuthMainButton(
-                      onPressed: ()async {
+                      onPressed: () async {
                         await SignUp();
-
                       },
                       mainButtonLabel: 'Sign Up',
                     )
