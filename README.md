@@ -1488,7 +1488,7 @@ auth\customer_signIn
   
   ![Screenshot (160)](https://user-images.githubusercontent.com/38869235/203247633-42ee101a-1001-4542-a32d-8f7dfbb64cb1.png)
   
-  <h3><i> <ins> Note </ins> : Time Stamp is necessary to get data stored one after the other in database, serially in a format (year,month,date) . </i></h3>
+
   
 <h3><li> 4.Uploading Customer Info .  </li></h3>
 <ul>
