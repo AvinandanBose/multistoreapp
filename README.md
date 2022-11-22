@@ -1477,8 +1477,36 @@ auth\customer_signIn
 ```
 </h3>
 
-   <ul>
+</ul>
+  
+  </ul>
+  <h3><li>13.Uploading Customer Info </li> </h3>
+  <ul>
+  <h3>  <li>1. Create Cloud FireStore Database.</a></li></h3>
+  <h3>  <li>2. Start Firebase Storage Service .</a></li></h3>
+  <h3>  <li>3. Use the Rule for  FireStore Database & Firebase Storage Service .</a></li></h3>
+  
+  ![Screenshot (160)](https://user-images.githubusercontent.com/38869235/203247633-42ee101a-1001-4542-a32d-8f7dfbb64cb1.png)
+  
+  <h3><i> <ins> Note </ins> : Time Stamp is necessary to get data stored one after the other in database, serially in a format (year,month,date) . </i></h3>
+  
+<h3><li> 4.Uploading Customer Info .  </li></h3>
+<ul>
 
+<h3><li> <a href= 'https://github.com/AvinandanBose/multistoreapp/tree/master115'>Uploading Customer Info [FInal] </a> </li></h3>
+   
+<h3>
+
+```Syntax
+
+auth\customer_signIn
+ 
+```
+</h3>
+
+</ul>
+
+  
   </ul>
 </ul>
 
