@@ -81,7 +81,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
           await FirebaseAuth.instance
               .createUserWithEmailAndPassword(email: email, password: password);
 
-//UploadingCustomerInfo
+          //UploadingCustomerInfo
           firebase_storage.Reference reference = firebase_storage
               .FirebaseStorage.instance
               .ref('cust-images/$email.jpg');
@@ -99,9 +99,9 @@ class _CustomerRegisterState extends State<CustomerRegister> {
             'address': '',
             'cid': _uid,
           });
-//UploadingCustomerInfo
+        //UploadingCustomerInfo
 
-//Reset
+          //Reset
           formKeyForValidation.currentState!.reset();
           setState(() {
             _imageFile = null;
