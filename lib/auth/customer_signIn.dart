@@ -21,6 +21,8 @@ class _CustomerRegisterState extends State<CustomerRegister> {
   late String profileImage;
   late String _uid;
 
+  bool processing = false;
+
   CollectionReference customers =
       FirebaseFirestore.instance.collection('customers');
 
@@ -73,13 +75,17 @@ class _CustomerRegisterState extends State<CustomerRegister> {
   }
 
   Future<void> SignUp() async {
+    setState(() {
+      processing = true;
+    });
     if (formKeyForValidation.currentState!.validate()) {
       if (_imageFile != null) {
         try {
+          //Creating User with Email and Password
           await FirebaseAuth.instance
               .createUserWithEmailAndPassword(email: email, password: password);
 
-//UploadingCustomerInfo
+          //UploadingCustomerInfo
           firebase_storage.Reference reference = firebase_storage
               .FirebaseStorage.instance
               .ref('cust-images/$email.jpg');
@@ -97,9 +103,9 @@ class _CustomerRegisterState extends State<CustomerRegister> {
             'address': '',
             'cid': _uid,
           });
-//UploadingCustomerInfo
+          //UploadingCustomerInfo
 
-//Reset
+          //Reset
           formKeyForValidation.currentState!.reset();
           setState(() {
             _imageFile = null;
@@ -109,26 +115,33 @@ class _CustomerRegisterState extends State<CustomerRegister> {
           Navigator.pushReplacementNamed(context, 'customer_home'); //PUSH
         } on FirebaseAuthException catch (e) {
           if (e.code == 'weak-password') {
+            setState(() {
+              processing = false; //Should not show Circular Progress Indicator
+            });
             MyMessageHandler.showSnackBar(
                 message: 'The password provided is too weak.',
                 key: _scaffoldKey); //→ Call To Function
           } else if (e.code == 'email-already-in-use') {
+            setState(() {
+              processing = false; //Should not show Circular Progress Indicator
+            });
             MyMessageHandler.showSnackBar(
                 message: 'The account already exists for that email',
                 key: _scaffoldKey);
           }
         }
-        await FirebaseAuth.instance
-            .createUserWithEmailAndPassword(email: email, password: password);
-        formKeyForValidation.currentState!.reset();
-        setState(() {
-          _imageFile = null;
-        });
+
       } else {
+        setState(() {
+          processing = false; //Should not show Circular Progress Indicator
+        });
         MyMessageHandler.showSnackBar(
             message: 'Upload Image', key: _scaffoldKey); //→ Call To Function
       }
     } else {
+      setState(() {
+        processing = false; //Should not show Circular Progress Indicator
+      });
       MyMessageHandler.showSnackBar(
           message: 'Please Fill All Fields',
           key: _scaffoldKey); //→ Call To Function
@@ -315,12 +328,14 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                       actionLabel: 'Log In',
                       onpressed: () {},
                     ),
-                    AuthMainButton(
-                      onPressed: () async {
-                        await SignUp();
-                      },
-                      mainButtonLabel: 'Sign Up',
-                    )
+                    processing == true
+                        ? CircularProgressIndicator()
+                        : AuthMainButton(
+                            onPressed: () async {
+                              await SignUp();
+                            },
+                            mainButtonLabel: 'Sign Up',
+                          )
                   ],
                 ),
               ),
