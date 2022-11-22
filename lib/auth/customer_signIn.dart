@@ -76,6 +76,8 @@ class _CustomerRegisterState extends State<CustomerRegister> {
     if (formKeyForValidation.currentState!.validate()) {
       if (_imageFile != null) {
         try {
+          
+          //Create User with Email and Password
           await FirebaseAuth.instance
               .createUserWithEmailAndPassword(email: email, password: password);
 
@@ -118,12 +120,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                 key: _scaffoldKey);
           }
         }
-        await FirebaseAuth.instance
-            .createUserWithEmailAndPassword(email: email, password: password);
-        formKeyForValidation.currentState!.reset();
-        setState(() {
-          _imageFile = null;
-        });
+        
       } else {
         MyMessageHandler.showSnackBar(
             message: 'Upload Image', key: _scaffoldKey); //→ Call To Function
