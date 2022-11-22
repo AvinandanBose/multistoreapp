@@ -205,7 +205,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                             label: 'Log In',
                             onPressed: () {
                               Navigator.pushReplacementNamed(
-                                  context, 'customer_home');
+                                  context, 'customer_login');
                             }),
                         Padding(
                           padding: const EdgeInsets.only(left: 8.0),
