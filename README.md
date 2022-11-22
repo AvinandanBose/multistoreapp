@@ -1493,7 +1493,7 @@ auth\customer_signIn
 <h3><li> 4.Uploading Customer Info .  </li></h3>
 <ul>
 
-<h3><li> <a href= 'https://github.com/AvinandanBose/multistoreapp/tree/master115'>Uploading Customer Info [FInal] </a> </li></h3>
+<h3><li> <a href= 'https://github.com/AvinandanBose/multistoreapp/tree/master115'>Uploading Customer Info [Final] </a> </li></h3>
    
 <h3>
 
