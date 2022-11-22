@@ -1524,7 +1524,25 @@ auth\customer_signIn
 </h3>
    
 </ul>
-  
+  <h3>  <li>15. Login.</a></li></h3>
+  <ul>
+
+<h3><li> <a href= 'https://github.com/AvinandanBose/multistoreapp/tree/master117'>Login [Final] </a> </li></h3>
+   
+<h3>
+
+```Syntax
+
+NamedPush: main
+WidgetCall: main_screen\welcome_screen
+WidgetCall: auth\customer_signIn
+auth\customer_login
+ 
+```
+</h3>
+   
 </ul>
+</ul>
+
 
 
