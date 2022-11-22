@@ -1504,6 +1504,7 @@ auth\customer_signIn
 ```
 </h3>
 
+<h3><i> <ins> Note </ins> :Email can be used for the name of Image in Firebase storage as it is unique for everybody. </i></h3>
 </ul>
 
   
