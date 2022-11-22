@@ -1509,6 +1509,22 @@ auth\customer_signIn
 
   
   </ul>
+  <h3>  <li>14. Adding Loading Indicator.</a></li></h3>
+  <ul>
+
+<h3><li> <a href= 'https://github.com/AvinandanBose/multistoreapp/tree/master116'>Adding Loading Indicator [Final] </a> </li></h3>
+   
+<h3>
+
+```Syntax
+
+auth\customer_signIn
+ 
+```
+</h3>
+   
+</ul>
+  
 </ul>
 
 
