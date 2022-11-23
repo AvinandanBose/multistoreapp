@@ -1564,6 +1564,24 @@ main_screen\profile
 </h3>
    
 </ul>
+<h3>  <li>17.Supplier's Authentication.</a></li></h3>
+  <ul>
+
+<h3><li> <a href= 'https://github.com/AvinandanBose/multistoreapp/tree/master119'>Supplier's Authentication[Final] </a> </li></h3>
+   
+<h3>
+
+```Syntax
+
+
+auth\supplier_signup 
+auth\csupplier_login
+Named Route: main
+WidgetCall: main_screen\welcome_screen
+Some Changes : auth\customer_signIn
+ 
+```
+</h3>
 </ul>
 
 
