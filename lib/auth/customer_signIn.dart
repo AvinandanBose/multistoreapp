@@ -331,7 +331,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                       },
                     ),
                     processing == true
-                        ? CircularProgressIndicator()
+                        ? const CircularProgressIndicator( color: Colors.purple,)
                         : AuthMainButton(
                             onPressed: () async {
                               await SignUp();
