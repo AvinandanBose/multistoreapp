@@ -1542,6 +1542,28 @@ auth\customer_login
 </h3>
    
 </ul>
+<h3>  <li>16.Previewing Customer Info. In His Profile.</a></li></h3>
+  <ul>
+
+<h3><li> <a href= 'https://github.com/AvinandanBose/multistoreapp/tree/master118'>Previewing Customer Info. In His Profile[Final] </a> </li></h3>
+   
+<h3>
+
+```Syntax
+
+WidgetCall: main_screen\customer_home
+main_screen\profile
+
+ CircularProgressIndicator
+ _________________________________
+ color: auth\customer_signIn 
+ color: auth\customer_login
+ color: main_screen\profile
+ 
+```
+</h3>
+   
+</ul>
 </ul>
 
 
