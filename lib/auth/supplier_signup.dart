@@ -7,24 +7,24 @@ import 'package:multistoreapp/widgets/snackbar.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:firebase_storage/firebase_storage.dart' as firebase_storage;
 
-class CustomerRegister extends StatefulWidget {
-  const CustomerRegister({Key? key}) : super(key: key);
+class SupplierRegister extends StatefulWidget {
+  const SupplierRegister({Key? key}) : super(key: key);
 
   @override
-  State<CustomerRegister> createState() => _CustomerRegisterState();
+  State<SupplierRegister> createState() => _SupplierRegisterState();
 }
 
-class _CustomerRegisterState extends State<CustomerRegister> {
-  late String name;
+class _SupplierRegisterState extends State<SupplierRegister> {
+  late String storeName;
   late String email;
   late String password;
-  late String profileImage;
+  late String storeLogo;
   late String _uid;
 
   bool processing = false;
 
-  CollectionReference customers =
-      FirebaseFirestore.instance.collection('customers');
+  CollectionReference suppliers =
+  FirebaseFirestore.instance.collection('suppliers');
 
   final ImagePicker _picker = ImagePicker();
   XFile? _imageFile;
@@ -88,20 +88,20 @@ class _CustomerRegisterState extends State<CustomerRegister> {
           //UploadingCustomerInfo
           firebase_storage.Reference reference = firebase_storage
               .FirebaseStorage.instance
-              .ref('cust-images/$email.jpg');
+              .ref('supp-images/$email.jpg');
 
           await reference.putFile(File(_imageFile!.path));
 
-          profileImage = await reference.getDownloadURL();
+          storeLogo = await reference.getDownloadURL();
           _uid = FirebaseAuth.instance.currentUser!.uid;
 
-          await customers.doc(_uid).set({
-            'name': name,
+          await suppliers.doc(_uid).set({
+            'storename': storeName,
             'email': email,
-            'profileimage': profileImage,
+            'storelogo': storeLogo,
             'phone': '',
-            'address': '',
-            'cid': _uid,
+            'sid': _uid,
+            'cover image': '',
           });
           //UploadingCustomerInfo
 
@@ -112,7 +112,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
           });
           //Reset
 
-          Navigator.pushReplacementNamed(context, 'customer_login'); //PUSH
+          Navigator.pushReplacementNamed(context, 'supplier_login'); //PUSH
         } on FirebaseAuthException catch (e) {
           if (e.code == 'weak-password') {
             setState(() {
@@ -150,7 +150,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
 
   final GlobalKey<FormState> formKeyForValidation = GlobalKey<FormState>();
   final GlobalKey<ScaffoldMessengerState> _scaffoldKey =
-      GlobalKey<ScaffoldMessengerState>(); //→ Key
+  GlobalKey<ScaffoldMessengerState>(); //→ Key
   bool passwordVisibility = true;
   bool isPassTextVisibility = true;
   @override
@@ -182,8 +182,8 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                             backgroundImage: _imageFile == null
                                 ? null
                                 : FileImage(
-                                    File(_imageFile!.path),
-                                  ),
+                              File(_imageFile!.path),
+                            ),
                           ),
                         ),
                         Column(
@@ -235,7 +235,7 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                       padding: const EdgeInsets.symmetric(vertical: 10),
                       child: TextFormField(
                         onChanged: (value) {
-                          name = value;
+                          storeName = value;
                         },
                         validator: (value) {
                           if (value!.isEmpty) {
@@ -312,13 +312,13 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                             },
                             icon: passwordVisibility
                                 ? const Icon(
-                                    Icons.remove_red_eye,
-                                    color: Colors.purple,
-                                  )
+                              Icons.remove_red_eye,
+                              color: Colors.purple,
+                            )
                                 : const Icon(
-                                    Icons.visibility_off,
-                                    color: Colors.purple,
-                                  ),
+                              Icons.visibility_off,
+                              color: Colors.purple,
+                            ),
                           ),
                         ),
                       ),
@@ -333,11 +333,11 @@ class _CustomerRegisterState extends State<CustomerRegister> {
                     processing == true
                         ? const CircularProgressIndicator( color: Colors.purple,)
                         : AuthMainButton(
-                            onPressed: () async {
-                              await SignUp();
-                            },
-                            mainButtonLabel: 'Sign Up',
-                          )
+                      onPressed: () async {
+                        await SignUp();
+                      },
+                      mainButtonLabel: 'Sign Up',
+                    )
                   ],
                 ),
               ),

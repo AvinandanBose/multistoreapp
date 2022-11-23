@@ -168,14 +168,17 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                                 label: 'Log In',
                                 onPressed: () {
                                   Navigator.pushReplacementNamed(
-                                      context, 'supplier_home');
+                                      context, 'supplier_login');//change
                                 }),
                             Padding(
                               padding: const EdgeInsets.only(left: 8.0),
                               child: YellowButton(
                                   width: 0.25,
                                   label: 'Sign Up',
-                                  onPressed: () {}),
+                                  onPressed: () {
+                                    Navigator.pushReplacementNamed(
+                                        context, 'supplier_signup');//change
+                                  }),
                             )
                           ],
                         ),
