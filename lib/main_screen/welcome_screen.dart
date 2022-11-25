@@ -1,5 +1,6 @@
 import 'dart:math';
 
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:multistoreapp/main_screen/supplierhomescreen.dart';
@@ -39,6 +40,10 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   late AnimationController controller;
   bool processing = false;
 
+  CollectionReference customers =
+      FirebaseFirestore.instance.collection('customers');
+
+  late String _uid;
   @override
   void initState() {
     // TODO: implement initState
@@ -168,7 +173,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                                 label: 'Log In',
                                 onPressed: () {
                                   Navigator.pushReplacementNamed(
-                                      context, 'supplier_login');//change
+                                      context, 'supplier_login'); //change
                                 }),
                             Padding(
                               padding: const EdgeInsets.only(left: 8.0),
@@ -177,7 +182,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                                   label: 'Sign Up',
                                   onPressed: () {
                                     Navigator.pushReplacementNamed(
-                                        context, 'supplier_signup');//change
+                                        context, 'supplier_signup'); //change
                                   }),
                             )
                           ],
@@ -256,7 +261,20 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                                 setState(() {
                                   processing = true;
                                 });
-                                await FirebaseAuth.instance.signInAnonymously();
+                                await FirebaseAuth.instance
+                                    .signInAnonymously()
+                                    .whenComplete(() async {
+                                  _uid = FirebaseAuth.instance.currentUser!.uid;
+                                  await customers.doc(_uid).set({
+                                    'name': '',
+                                    'email': '',
+                                    'profileimage': '',
+                                    'phone': '',
+                                    'address': '',
+                                    'cid': _uid,
+                                  });
+                                });
+
                                 Navigator.pushReplacementNamed(
                                     context, 'customer_home');
                               },
