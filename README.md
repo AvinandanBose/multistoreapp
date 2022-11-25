@@ -758,7 +758,7 @@ main_screen/dashboard
   </ul>
 
 </ul>
- <h1> B. Firebase Authentication </h1>
+ <h1> B. Firebase Authentication[Level 1] </h1>
  <ul>
   <h3> <li> 1. Authentication Form  Design </li></h1>
   <ul>
@@ -1582,6 +1582,32 @@ Some Changes : auth\customer_signIn
  
 ```
 </h3>
+
+</ul>
+
+<h3>  <li>18. Anonymous User info. [ Solution ].</a></li></h3>
+  <ul>
+
+<h3><li> <a href= 'https://github.com/AvinandanBose/multistoreapp/tree/master120'>Anonymous User info. [ Solution ]→ Final </a> </li></h3>
+   
+<h3>
+
+```Syntax
+
+ main_screen\profile
+ main_screen\welcome_screen
+ 
+```
+</h3>
+
+
+
+</ul>
+<h3> <ins><i> Final Built  </i></ins></h3>
+  👇
+  <ul>
+   <h1> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master120">B.Firebase Authentication[Level 1] -- FInal    </a></li></h1>
+  </ul>
 </ul>
 
 
