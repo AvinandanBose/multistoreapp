@@ -1606,9 +1606,11 @@ Some Changes : auth\customer_signIn
 <h3> <ins><i> Final Built  </i></ins></h3>
   👇
   <ul>
-   <h1> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master120">B.Firebase Authentication[Level 1] -- FInal    </a></li></h1>
+   <h1> <li><a href = "https://github.com/AvinandanBose/multistoreapp/tree/master120">B.Firebase Authentication[Level 1] -- Final    </a></li></h1>
   </ul>
 </ul>
-
+<h1> C. Upload Product [Cloud Firestore] </h1>
+<ul>
+</ul>
 
 
